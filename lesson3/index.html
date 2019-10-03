@@ -8,11 +8,38 @@
 
     <!-- reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-
     <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body>
-    
+
+<body onload="UpdateDates()">
+
+    <header>
+        <h1> Design Principles Document</h1> 
+
+    </header>
+
+    <main>
+
+        <h2> <a href="../index.html"> CIT 230:</a> Website Planning Document </h2>
+        <hr class="lineaSeparadora">
+
+
+    </main>
+
+
+    <footer>
+        <small>
+            © <span id="copyrightdate"></span> | Sergio Bravo | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </small>
+
+        <br>
+
+        <small id="lastupdated">
+            Last Updated: <span id="datemodified"></span>
+        </small>
+    </footer>
+</body>
 </body>
 </html>
