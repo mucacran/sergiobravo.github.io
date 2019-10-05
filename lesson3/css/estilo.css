@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
 
+p{
+    font-family: 'Didact Gothic', sans-serif;
+}
 
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Raleway', sans-serif;
+}
 
 header {
     font-family: 'Raleway', sans-serif;
@@ -84,7 +92,8 @@ footer a:active
 
 .cartaHorizintal
 {
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -95,7 +104,63 @@ img.img100
     margin-right: 15px;
 }
 
-.cartaHorizintal p
+.cartaHorizintal p,
+.colorPrimario1 p,
+.colorPrimario2 p,
+.colorSecundarios p,
+.colorTexto p
 {
     margin-bottom: 0px;
+}
+
+
+/* Paleta de colores */
+.colorPrimario1
+{
+    background-color: #f7b731;
+
+}
+
+.colorPrimario2
+{
+    background-color: #36454f;
+    
+}
+
+.colorTexto{
+    background-color: #333333;
+}
+
+.colorSecundarios{
+    background-color: #e8e8e8;
+}
+
+.colorPrimario1,
+.colorPrimario2,
+.colorTexto,
+.colorSecundarios
+{
+    padding: 15px 0px;
+}
+
+
+/* 
+Responsive
+*/
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .container.amarillo
+    {
+        background-color: #fed330;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .container.amarillo
+    {
+        background-color: #fed330;
+    }
+    .container.amarilloObs
+    {
+        background-color: #f7b731;
+    }
 }
