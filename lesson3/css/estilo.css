@@ -54,6 +54,11 @@ nav li a {
 	text-decoration: none;
 	font-size: 0.95rem;
 }
+
+nav li a.active {
+    background-color: #fed330;
+    color: #333333;
+}
 nav a:hover {
 	background-color: #bbb;
 	color: #36454f;
