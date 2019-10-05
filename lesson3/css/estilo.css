@@ -82,3 +82,20 @@ footer a:active
     font-family: 'Raleway', sans-serif;
 }
 
+.cartaHorizintal
+{
+    display: flex;align-items: center;
+    margin-bottom: 20px;
+}
+
+img.img100
+{
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.cartaHorizintal p
+{
+    margin-bottom: 0px;
+}
