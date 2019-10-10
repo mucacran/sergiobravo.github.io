@@ -23,10 +23,19 @@ h1,h2,h3,h4,h5,h6
     color: var(--negro);
 }
 
+footer,
 nav {
 	margin: 0 auto;
 	max-width: 760px;
 	background-color: var(--negro);
+}
+
+footer
+{
+    text-align: center;
+    padding: 24px;
+    background-color:var(--amarilloFuerte);
+    box-sizing: border-box;
 }
 .navigation {
 	list-style: none;

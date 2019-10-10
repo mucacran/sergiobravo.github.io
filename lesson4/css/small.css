@@ -38,3 +38,12 @@
     }
 
 }
+
+@media screen and (min-width: 520px) and (max-width: 734px)
+{
+    ul.navegation 
+    {
+        display: flex;
+        align-items: center;
+    }
+}
