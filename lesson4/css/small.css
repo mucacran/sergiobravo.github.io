@@ -2,3 +2,39 @@
     Edit:   Sergio Bravo;
     Web: https://www.mucacran.com
 */
+
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		color: white;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .temaPrincipal
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .temaPrincipal
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

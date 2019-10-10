@@ -2,3 +2,82 @@
     Edit:   Sergio Bravo;
     Web: https://www.mucacran.com
 */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+*
+{
+    font-family: raleway;
+}
+
+:root
+{
+    --amarillo: #fed330;
+    --amarilloFuerte: #f7b731;
+    --grisClaro: #e8e8e8;
+    --colorTexto: #333333;
+    --negro: #36454f;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    color: var(--negro);
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: var(--negro);
+}
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: #fff;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation li:hover,
+.navigation a:hover {
+	color: var(--colorTexto);
+	background-color:var(--amarillo);
+	font-weight: 600;
+}
+
+/*****************************************************/
+/*          MI CSS                                   */
+/*****************************************************/
+.temaPrincipal
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo
+{
+    font-size: 5rem;
+    margin-right: 20px;
+    color: var(--negro)
+}
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+
+div.espacio
+{
+    width: 100%;
+    height: 50px;
+}
