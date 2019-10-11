@@ -76,3 +76,55 @@ footer a:active
     font-family: 'Raleway', sans-serif;
 }
 
+/**************************************/
+.row-contenedor
+{
+    display: flex;
+    justify-content: center;
+}
+
+.columnaContenedora
+{
+    width: 300px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.columnaContenedora img{
+    width: 100%;
+    height: auto;
+}
+
+.columnaContenedora figure
+{
+    margin: 1rem 0;
+}
+
+.cabeceraH1
+{
+    padding: 0px;
+}
+
+.cabecera2
+{
+    padding: 0px 15px;
+}
+
+@media screen and (max-width: 600px)
+{
+    .row-contenedor
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width:317px )
+{
+    .columnaContenedora
+    {
+        width: 100%;
+        height: auto;
+    }
+}
