@@ -43,11 +43,10 @@
 
 }
 
-@media only screen and (min-width: 520px) and (max-width: 734px)
+@media screen and (max-width: 734px)
 {
-    .navegation li
+    main, footer, nav
     {
-        display: inline-block;
-        height: 24px !important;
+        margin: 0px 15px;
     }
 }
