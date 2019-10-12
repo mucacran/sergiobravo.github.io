@@ -21,7 +21,7 @@ function printMeses()
     
     var fecha = new Date();
 
-    var fechaPrint = daysName[fecha.getDay()] + ', ' + fecha.getDate() + ' ' + monthName[fecha.getMonth()] + ' ' + fecha.getFullYear();
+    var fechaPrint = 'Last updated: ' + daysName[fecha.getDay()] + ', ' + fecha.getDate() + ' ' + monthName[fecha.getMonth()] + ' ' + fecha.getFullYear();
     var divFecha = document.getElementById('fecha');
     divFecha.innerHTML = fechaPrint;
 }
