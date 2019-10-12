@@ -19,7 +19,8 @@ function printMeses()
     var monthName = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
     var daysName = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     
-    var fecha = new Date();
+    //var fecha = new Date();
+    var fecha = new Date(document.lastModified);
 
     var fechaPrint = 'Last updated: ' + daysName[fecha.getDay()] + ', ' + fecha.getDate() + ' ' + monthName[fecha.getMonth()] + ' ' + fecha.getFullYear();
     var divFecha = document.getElementById('fecha');
