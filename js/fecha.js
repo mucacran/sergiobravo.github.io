@@ -13,6 +13,7 @@ function GetModifiedDate()
     document.getElementById("datemodified").innerHTML = modifiedDate;
 }
 
+
 function UpdateDates()
 {
     GetCurrentYear();
