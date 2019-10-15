@@ -9,6 +9,7 @@
 	.navigation {
         display: flex;
         align-items: center;
+        margin-top: 0px;
 	}
 	.navigation li:first-child {
 		display: none;
@@ -45,7 +46,7 @@
 
 @media screen and (max-width: 734px)
 {
-    main, footer, nav
+    main, footer, nav div
     {
         margin: 0px 15px;
     }
