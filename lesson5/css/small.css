@@ -1,7 +1,31 @@
-/*que pasa con el archivo
+/*
     Edit:   Sergio Bravo;
     Web: https://www.mucacran.com
 */
+
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {        
+        display: flex;
+        flex: 1 1 100%;
+        height: 75px;
+        align-items: center;
+        justify-content: center;
+	}
+	.navigation li a {
+		color: white;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .temaPrincipal
     {
