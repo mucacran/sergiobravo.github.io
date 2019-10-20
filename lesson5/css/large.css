@@ -127,17 +127,46 @@ h2.nombrePagina
     text-align: center;
 }
 
+
+
+div.contentbox.contenUno
+{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/prestonImg.jpg);
+    background-size: 800px;
+    background-repeat: none;
+    background-position: center;
+    position: relative;
+}
+
 .contenedores div
 {
     margin: 15px auto;
     padding: 15px;
-
-   
     background-color: var(--grisClaro);
-    border: 3px solid var(--negro);
-    border-style: dotted;
+    border: 0px solid var(--negro);
+    /* border-style: dotted; */
     box-sizing: border-box;
-    
-
 }
 
+div.cuadroInterior
+{
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top:-0px;
+    border: 0px;
+    border-style: none;
+}
+
+div.cuadroInterior table tr td.textAlign
+{
+    text-align: right;
+    color: var(--negro);
+}
+
+div.cuadroInterior table
+{
+    margin: 0px auto;
+}

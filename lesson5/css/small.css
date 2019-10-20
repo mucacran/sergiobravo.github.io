@@ -27,3 +27,17 @@
         margin: 0px 15px;
     }
 }
+
+@media (max-width: 519px)
+{
+    div.contentbox.contenUno
+    {
+        height: 255px;
+        background-size: 100%;
+        background-position-y: 0px;
+    }
+    div.cuadroInterior
+    {
+        background-color: rgba(232,232,232, 0.9)
+    }
+}

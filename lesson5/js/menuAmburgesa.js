@@ -7,7 +7,5 @@ function toggleMenu() {
 	for(var i=0; i < elementClasses.length;i++)
 	{
 		console.log(elementClasses[i]);
-	}
-
-	
+	}	
 }
