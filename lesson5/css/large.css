@@ -165,8 +165,35 @@ div.cuadroInterior table tr td.textAlign
     text-align: right;
     color: var(--negro);
 }
-
+.contentbox.forecast table,
 div.cuadroInterior table
 {
     margin: 0px auto;
+}
+
+div.contentbox.forecast
+{
+    text-align: center;
+    background-color: white;
+}
+
+.contentbox.forecast table
+{
+    width: 400px;
+    text-align: center;
+    border: 1px solid var(--grisClaro);
+    border-collapse: collapse;
+}
+.semanaTemperatura
+{
+    width: 80%;
+}
+
+.contentbox.forecast table tr:first-child td{
+    background-color: var(--grisClaro);
+}
+
+.contentbox.forecast table tr td
+{
+    border-right: 1px solid var(--grisClaro);
 }
