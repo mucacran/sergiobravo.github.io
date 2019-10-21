@@ -41,6 +41,7 @@
         background-color: rgba(232,232,232, 0.9)
     }
 
+    img.imagenCOntacto,
     div.contentbox.forecast
     {
         display: none;
@@ -55,4 +56,15 @@
     {
         text-align: justify;
     }
+    .responsive li.activity
+    {
+        background-color: white;
+        color: var(--negro);
+    }
+
+    .responsive li.activity a
+    {
+        color: var(--negro);
+    }
+    
 }

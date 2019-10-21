@@ -221,3 +221,26 @@ div.clearfix
     padding: 0px;
     margin: 0px;
 }
+
+div.contentbox.contacto
+{
+    display: flex;
+    align-items: center;
+}
+
+.imagenCOntacto
+{
+    width: 400px;
+}
+
+img.iconosContactos
+{
+    width: 15px;
+    height: auto;
+}
+
+p img.socialMediaImg
+{
+    width: 34px;
+    height: auto;
+}

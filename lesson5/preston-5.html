@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/small.css">
-   
 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+   
     <!-- scripts -->
     <script src="js/menuAmburgesa.js"></script>
     <script src="js/fecha.js"></script>
 </head>
 <body onload="UpdateDates()">
+    <div id="promocion"></div>
     <header>
         <div class="temaPrincipal">
             <img class="logo" src="img/logo.svg" alt="logo - Climatizate in your City">
@@ -99,23 +101,33 @@
                 <h3>    Founders Day Fresco</h3>
                 <i>by Janina Juarez</i>
                 <div class="texto"> 
-                        
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore dolores iste deleniti rerum necessitatibus sint possimus. Quasi est sunt, odit porro, debitis a ipsum aliquid, placeat nesciunt expedita quidem?
                     </p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus modi laborum, animi similique ipsum voluptas repellendus eveniet tempora magni explicabo quo expedita reprehenderit maxime aliquam odio voluptate. Dolores, debitis odio?
                     </p>
-                    
                     <a href="#"><strong>READ MORE</strong></a>
                     <div class="clearfix"></div>
                 </div>
-                
-                    
-                
-                
             </div>
-            <div class="contentbox">Contact Information</div>
+            <div class="contentbox contacto">
+                <img class="imagenCOntacto" src="img/mapa.jpg" alt="mapa de preston">
+                <div>
+                    <p>
+                        <strong> The weather site </strong><br>
+                        <img class="iconosContactos" src="img/gps-icon-preston.jpg" alt="Imagen de ptreston"> 30 N 1 st E Preston, ID 86263 <br> <br>  
+                        <img class="iconosContactos" src="img/telefono.png" alt="Imagen de ptreston"> 999.999.9999 <br>
+                        <img class="iconosContactos" src="img/mail.png" alt="Imagen de ptreston"> theweathersite@tws.com
+                    </p>
+                    <p>
+                        <img class="socialMediaImg" src="img/facebook.png" alt="social media preston">
+                        <img class="socialMediaImg" src="img/pinteres.png" alt="social media preston">
+                        <img class="socialMediaImg" src="img/twiter.png" alt="social media preston">
+                        <img class="socialMediaImg" src="img/wasap.png" alt="social media preston">
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -125,6 +137,9 @@
         <br>
         <small id="fecha"></small>
     </footer>
+    <script>
     
+    promocion();
+    </script>
 </body>
 </html>
