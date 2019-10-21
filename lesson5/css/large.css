@@ -197,3 +197,27 @@ div.contentbox.forecast
 {
     border-right: 1px solid var(--grisClaro);
 }
+
+div.texto
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+img.imagenArticulo
+{
+    width: 300px;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px var(--negro);
+}
+
+div.clearfix
+{
+    clear: both;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}

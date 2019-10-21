@@ -45,4 +45,14 @@
     {
         display: none;
     }
+    img.imagenArticulo
+    {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+    div.texto p
+    {
+        text-align: justify;
+    }
 }
