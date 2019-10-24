@@ -1,0 +1,64 @@
+/*que pasa con el archivossssss
+    Edit:   Sergio Bravo;
+    Web: https://www.mucacran.com
+*/
+@media screen and (max-width: 400px) {
+    .temaPrincipal
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .temaPrincipal
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 734px)
+{
+    main, footer, nav div
+    {
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 519px)
+{
+    div.cuadroInterior
+    {
+        background-color: rgba(232,232,232, 0.9)
+    }
+
+    img.imagenCOntacto,
+    div.contentbox.forecast
+    {
+        display: none;
+    }
+    img.imagenArticulo
+    {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+    div.texto p
+    {
+        text-align: justify;
+    }
+    .responsive li.activity
+    {
+        background-color: white;
+        color: var(--negro);
+    }
+
+    .responsive li.activity a
+    {
+        color: var(--negro);
+    }
+    
+}
