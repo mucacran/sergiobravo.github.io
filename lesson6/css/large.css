@@ -2,6 +2,10 @@
     Edit:   Sergio Bravo;
     Web: https://www.mucacran.com
 */
+div.contenUno.contenUno
+{
+    padding: 0px;
+}
 @media screen and (max-width: 400px) {
     .temaPrincipal
     {

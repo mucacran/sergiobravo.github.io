@@ -138,18 +138,17 @@ div.contentbox.contenUno
     padding: 15px;
     background-color: var(--grisClaro);
     border: 0px solid var(--negro);
-    /* border-style: dotted; */
     box-sizing: border-box;
 }
 
 div.cuadroInterior
 {
-    height: 250px;
     width: 200px;
     position: absolute;
-    top:-0px;
+    top: 0px;
     border: 0px;
     border-style: none;
+    margin-left: 15px;
 }
 
 div.cuadroInterior table tr td.textAlign
