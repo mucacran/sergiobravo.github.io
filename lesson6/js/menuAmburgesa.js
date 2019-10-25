@@ -18,7 +18,7 @@ function promocion()
 
 	var fecha = new Date();
 	
-	if(fecha.getDay() == 6)
+	if(fecha.getDay() == 5)
 	{
 		divHtml.innerHTML = texto;
 	}
