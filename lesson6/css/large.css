@@ -69,12 +69,12 @@ div.contenUno.contenUno
     .responsive li.activity
     {
         background-color: white;
-        color: var(--negro);
+        color: #333333;
     }
 
     .responsive li.activity a
     {
-        color: var(--negro);
+        color: #333333;
     }
     
 }

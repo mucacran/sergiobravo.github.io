@@ -49,7 +49,7 @@
     .navigation li.activity > a
     {
         background-color: white;
-        color: var(--colorTexto);
+        color: #333333;
     }
 }
 
