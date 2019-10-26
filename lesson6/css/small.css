@@ -7,6 +7,7 @@
 {
     font-family: Didact Gothic;
     font-size: 18px;
+    color: #333333;
 }
 
 :root
@@ -25,6 +26,7 @@ h1,h2,h3,h4,h5,h6
 {
     font-family: raleway;
     color: var(--negro);
+    font-weight: 900;
 }
 
 header
@@ -239,6 +241,15 @@ p img.socialMediaImg
 
 @media (max-width: 519px)
 {
+    picture::before
+    {
+        content: "Smoll" !important;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 50px;
+        color: red;
+    }
     div.contentbox.contenUno
     {
         margin: 0px;

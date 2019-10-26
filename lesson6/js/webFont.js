@@ -1,8 +1,14 @@
+// var WebFont = require('webfontloader');
+
 WebFont.load({
     google: {
         families: [
-            'Raleway',
-            'Didact Gothic'
+            'Didact Gothic',
+            'Raleway:900'
         ]
     }
 });
+
+WebFontConfig = {
+    events: false
+  };

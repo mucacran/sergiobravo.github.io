@@ -16,9 +16,11 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
    
     <!-- scripts -->
-    <script src="js/menuAmburgesa.js"></script>
-    <script src="js/fecha.js"></script>
+    <script src="js/windchill.js"></script> <!-- saca la temperatura por pantalla -->
+    <script src="js/menuAmburgesa.js"></script> <!-- menu responsive -->
+    <script src="js/fecha.js"></script> <!-- fecha en el footer -->
 </head>
+
 <body onload="UpdateDates()">
     <div id="promocion"></div>
     <header>
@@ -49,7 +51,7 @@
             <div class="contentbox contenUno">
                 <div class="cuadroInterior">
                     <h3 style="text-align: center">
-                            Weather Summary
+                        Weather Summary
                     </h3>
                     <hr>
                     <table>
@@ -57,16 +59,16 @@
                             <td class="textAlign"><b> Currently:</b></td><td>Sunnys</td>
                         </tr>
                         <tr>
-                            <td class="textAlign"> <b>High: </b></td><td>76 °F</td>
+                            <td class="textAlign"> <b>High: </b></td><td><span      id="high">76</span> °F</td>
                         </tr>
                         <tr>
-                            <td class="textAlign"> <b>Wind Chill:</b></td><td><span id="temperatura">51 </span>°F</td>
+                            <td class="textAlign"> <b>Wind Chill:</b></td><td><span id="temp">51</span> °F</td>
                         </tr>
                         <tr>
-                            <td class="textAlign"> <b>Humidity: </b></td><td>69% </td>
+                            <td class="textAlign"> <b>Humidity: </b></td><td>69%</td>
                         </tr>
                          <tr>
-                             <td class="textAlign"><b>Wind Speed:</b></td><td>5 mgh </td>
+                             <td class="textAlign"><b>Wind Speed:</b></td><td><span id="speed">5</span> mgh </td>
                          </tr>
                     </table>
                 </div>
@@ -145,10 +147,11 @@
         <small id="fecha"></small>
     </footer>
     <script>
-    
-    promocion();
+        promocion();
+        windChill();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
     <script src="js/webFont.js"></script>
+    
 </body>
 </html>
