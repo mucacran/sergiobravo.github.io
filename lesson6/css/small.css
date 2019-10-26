@@ -10,33 +10,21 @@
     color: #333333;
 }
 
-:root
-{
-    --amarillo: #fed330;
-    --amarilloFuerte: #f7b731;
-    --grisClaro: #e8e8e8;
-    --colorTexto: #333333;
-    --negro: #36454f;
-}
-
-/* Media Query for medium + screens 992*/
-
-
 h1,h2,h3,h4,h5,h6
 {
     font-family: raleway;
-    color: var(--negro);
+    color: #36454f;
     font-weight: 900;
 }
 
 header
 {
-    background-color: var(--grisClaro);
+    background-color: #e8e8e8;
     padding: 50px 0px;
 }
 
 nav{
-    background-color: var(--negro);
+    background-color: #36454f;
 }
 
 main,
@@ -44,7 +32,7 @@ footer,
 nav.nav div{
 	margin: 0 auto;
 	max-width: 760px;
-    background-color: var(--negro);
+    background-color: #36454f;
     box-sizing: border-box;
 }
 
@@ -52,7 +40,7 @@ footer
 {
     text-align: center;
     padding: 24px;
-    background-color:var(--amarilloFuerte);
+    background-color:#f7b731;
     box-sizing: border-box;
 }
 .navigation {
@@ -76,14 +64,14 @@ footer
 }
 .navigation li:hover,
 .navigation a:hover {
-	color: var(--colorTexto);
-	background-color:var(--amarillo);
+	color: #333333;
+	background-color:#fed330;
 	font-weight: 600;
 }
 
 .navigation li.activity:hover,
 .navigation li.activity a:hover {
-	color: var(--colorTexto);
+	color: #333333;
 	background-color:white;
 	font-weight: none;
 }
@@ -104,7 +92,7 @@ footer
     height: auto;
     font-size: 5rem;
     margin-right: 20px;
-    color: var(--negro);
+    color: #36454f;
 }
 /* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
   <ul class="navigation responsive">
@@ -139,8 +127,8 @@ div.contentbox.contenUno
 {
     margin: 15px auto;
     padding: 15px;
-    background-color: var(--grisClaro);
-    border: 0px solid var(--negro);
+    background-color: #e8e8e8;
+    border: 0px solid #36454f;
     box-sizing: border-box;
 }
 
@@ -157,7 +145,7 @@ div.cuadroInterior
 div.cuadroInterior table tr td.textAlign
 {
     text-align: right;
-    color: var(--negro);
+    color: #36454f;
 }
 .contentbox.forecast table,
 div.cuadroInterior table
@@ -175,7 +163,7 @@ div.contentbox.forecast
 {
     width: 400px;
     text-align: center;
-    border: 1px solid var(--grisClaro);
+    border: 1px solid #e8e8e8;
     border-collapse: collapse;
 }
 .semanaTemperatura
@@ -184,12 +172,12 @@ div.contentbox.forecast
 }
 
 .contentbox.forecast table tr:first-child td{
-    background-color: var(--grisClaro);
+    background-color: #e8e8e8;
 }
 
 .contentbox.forecast table tr td
 {
-    border-right: 1px solid var(--grisClaro);
+    border-right: 1px solid #e8e8e8;
 }
 
 div.texto
@@ -205,7 +193,7 @@ img.imagenArticulo
     float: right;
     margin-left: 15px;
     margin-bottom: 15px;
-    box-shadow: 0px 0px 5px var(--negro);
+    box-shadow: 0px 0px 5px #36454f;
 }
 
 div.clearfix
