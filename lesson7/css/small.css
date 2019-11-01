@@ -273,6 +273,8 @@ p img.socialMediaImg
     margin-bottom: 30px;  
     width: auto;
     box-sizing:border-box;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
 }
 
 .contenedor figure img
