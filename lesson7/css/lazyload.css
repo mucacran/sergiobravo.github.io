@@ -1,0 +1,32 @@
+figure img[data-src] {
+  filter: blur(0.2em);
+}
+
+figure img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+figure
+{
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+figcaption
+{
+    text-align: center;
+}

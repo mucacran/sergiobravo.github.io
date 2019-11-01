@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lazyload</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!--para que se vea igual en todos los navegadores -->
+    <link rel="stylesheet" href="css/lazyload.css">
+    <!-- script -->
+    <script src="js/ladyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Progressive Loading of Images</h1>
+    </header>
+    <main>
+        <div class="contenedor">
+            <figure>
+                <img class="imagen" src="img/fondo.jpg" data-src="img/jardinverde.jpg" alt="jardinverde">
+                <figcaption>jardinverde</figcaption>
+            </figure>
+            <figure>
+                <img class="imagen" src="img/fondo.jpg" data-src="img/rosadorojo.jpg" alt="rosadorojo">
+                <figcaption>rosadorojo</figcaption>
+            </figure>
+            <figure>
+                <img class="imagen" src="img/fondo.jpg" data-src="img/riofrio.jpg" alt="riofrio">
+                <figcaption>riofrio</figcaption>
+            </figure>
+            <figure>
+                <img class="imagen" src="img/fondo.jpg" data-src="img/lago.jpg" alt="lago">
+                <figcaption>lago</figcaption>
+            </figure>
+            <figure>
+                <img class="imagen" src="img/fondo.jpg" data-src="img/cuadropintura.jpg" alt="cuadropintura">
+                <figcaption>cuadropintura</figcaption>
+            </figure>
+            <figure>
+                <img class="imagen" src="img/fondo.jpg" data-src="img/paisajeverde.jpg" alt="paisajeverde">
+                <figcaption>paisajeverde</figcaption>
+            </figure>
+        </div>
+    </main>
+</body>
+</html>
