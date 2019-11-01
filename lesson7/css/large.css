@@ -78,3 +78,43 @@ div.contenUno.contenUno
     }
     
 }
+
+@media only screen and (min-width: 80em) /*== 1280px*/
+{
+/*****************************************************************GALLERY************************************************************************/
+    .contenedor
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }    
+
+    .contenedor figure
+    {
+        margin: 0px;
+        background-color: #f7b731;
+        margin: 0 auto;
+        margin-bottom: 30px;  
+        width: auto;
+        box-sizing:border-box;
+    }
+
+    .contenedor figure:hover
+    {
+        box-shadow: 5px 5px 12px 1px rgba(54, 69, 79, .5);
+    }
+
+    .contenedor figure img
+    {
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contenedor figure figcaption
+    {
+        padding: 15px 0px;
+        color: #36454f;
+        text-align: center;
+    }
+}

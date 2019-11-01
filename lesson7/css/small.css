@@ -27,6 +27,12 @@ nav{
     background-color: #36454f;
 }
 
+.centrar
+{
+    margin: 0px auto;
+    text-align: center;
+}
+
 main,
 footer,
 nav.nav div{
@@ -248,4 +254,46 @@ p img.socialMediaImg
         width: 100%;
         height: auto;
     }
+}
+
+/*****************************************************************GALLERY************************************************************************/
+.contenedor
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    transition: grid-template-columns 2s;
+}    
+
+.contenedor figure
+{
+    margin: 0px;
+    background-color: #f7b731;
+    margin: 0 auto;
+    margin-bottom: 30px;  
+    width: auto;
+    box-sizing:border-box;
+}
+
+.contenedor figure img
+{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor figure figcaption
+{
+    padding: 15px 0px;
+    color: #36454f;
+    text-align: center;
+}
+
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
 }

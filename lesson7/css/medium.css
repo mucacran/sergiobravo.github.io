@@ -25,7 +25,7 @@
         }
 }
 
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 32.5em) { /*32.5 == 520px*/
 	.navigation {
         display: flex;
         align-items: center;
@@ -51,6 +51,36 @@
         background-color: white;
         color: #333333;
     }
+
+/*****************************************************************GALLERY************************************************************************/
+        .contenedor
+        {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        }    
+
+        .contenedor figure
+        {
+        margin: 0px;
+        background-color: #f7b731;
+        margin: 0 auto;
+        margin-bottom: 30px;  
+        width: auto;
+        box-sizing:border-box;
+        }
+
+        .contenedor figure img
+        {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+        }
+
+        .contenedor figure figcaption
+        {
+        padding: 15px 0px;
+        color: #36454f;
+        text-align: center;
+        }
 }
-
-
