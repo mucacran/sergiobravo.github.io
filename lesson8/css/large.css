@@ -1,0 +1,120 @@
+/*que pasa con el archivossssss
+    Edit:   Sergio Bravo;
+    Web: https://www.mucacran.com
+*/
+@media screen and (min-width: 800px) {
+    picture::before
+    {
+            content: "Large";
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 50px;
+            color: red;
+    }
+}
+
+div.contenUno.contenUno
+{
+    padding: 0px;
+}
+@media screen and (max-width: 400px) {
+    .temaPrincipal
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .temaPrincipal
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 734px)
+{
+    main, footer, nav div
+    {
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 519px)
+{
+    div.cuadroInterior
+    {
+        background-color: rgba(232,232,232, 0.9)
+    }
+
+    img.imagenCOntacto,
+    div.contentbox.forecast
+    {
+        display: none;
+    }
+    img.imagenArticulo
+    {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+    div.texto p
+    {
+        text-align: justify;
+    }
+    .responsive li.activity
+    {
+        background-color: white;
+        color: #333333;
+    }
+
+    .responsive li.activity a
+    {
+        color: #333333;
+    }
+    
+}
+
+@media only screen and (min-width: 80em) /*== 1280px*/
+{
+/*****************************************************************GALLERY************************************************************************/
+    .contenedor
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }    
+
+    .contenedor figure
+    {
+        margin: 0px;
+        background-color: #f7b731;
+        margin: 0 auto;
+        margin-bottom: 30px;  
+        width: auto;
+        box-sizing:border-box;        
+    }
+
+    .contenedor figure:hover
+    {
+        box-shadow: 5px 5px 12px 1px rgba(54, 69, 79, .5);
+    }
+
+    .contenedor figure img
+    {
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contenedor figure figcaption
+    {
+        padding: 15px 0px;
+        color: #36454f;
+        text-align: center;
+    }
+}
