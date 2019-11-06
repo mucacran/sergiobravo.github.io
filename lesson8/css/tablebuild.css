@@ -21,6 +21,14 @@ caption
     padding: 12px 0px;
     
 }
+
+table tr td:hover
+{
+    background-color: #628ca6;
+    cursor: pointer;
+    color: white;
+}
+
 caption
 {
     border-bottom:0px;
@@ -51,6 +59,7 @@ thead
 {
     background-color: #628ca6;
     color: white;
+    font-size: 19px;
 }
 
 table tr:nth-child(2n)
