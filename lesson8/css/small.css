@@ -299,3 +299,38 @@ figure img {
     filter: blur(0em);
     transition: filter 0.5s;
 }
+/***************************FORMULARIO STORM CENTER*************************/
+.modulocontenedor
+{
+    display:flex;
+    flex-direction:column;
+}
+.modulocontenedor label
+{
+    display: grid;
+    margin-bottom: 15px;
+}
+.modulocontenedor label input
+{
+    margin-top: 5px;
+    padding: 15px;;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border:0px;
+}
+div.areYouDanger
+{
+    margin: 0px;
+    padding: 0px;
+    
+}
+div.areYouDanger label
+{
+    display: flex;
+    align-content: flex-start;   
+}
+
+.contenedorFormulario.contentbox
+{
+    background-color: #f7b731;
+}
