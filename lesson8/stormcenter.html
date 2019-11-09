@@ -70,8 +70,8 @@
                                 <option value = "Tornado"></option>
                             </datalist>
                         </label>
-                        <label>Storm Severity
-                        <input type="range" id="severity" value="5" min="1" max="10" step="1" list="sevsettings">
+                        <label><span >Storm Severity: <span id="ratingvalue">5</span></span>
+                        <input type="range" id="severity" value="5" min="1" max="10" step="1" list="sevsettings" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <datalist id="sevsettings">
                                 <option>1</option>   <option>2</option>
                                 <option>3</option>
@@ -95,9 +95,9 @@
                         </label>
                         <label>Are You In Danger:</label>
                         <div class="areYouDanger">
-                            <label><input type="radio" name="dangerLevel" value="yes"><span class="">Yes</span></label>
-                            <label><input type="radio" name="dangerLevel" value="maybe"><span class="">Maybe</span></label>
-                            <label><input type="radio" name="dangerLevel" value="no"><span class="">No</span></label>
+                            <label><input type="radio" name="dangerLevel" value="yes"><span > Yes</span></label>
+                            <label><input type="radio" name="dangerLevel" value="maybe"><span > Maybe</span></label>
+                            <label><input type="radio" name="dangerLevel" value="no"><span> No</span></label>
                         </div>
                     </div>
                     <div class="modulocontenedor">
@@ -107,7 +107,7 @@
                             <textarea name="additionalInfo"></textarea>
                         </label>
                     </div>
-                    <input type="submit" value="Send" class=""> 
+                    <input type="submit" value="Send"> 
                 </form>
             </div>
             <div class="contentbox contacto">
@@ -136,5 +136,10 @@
         <br>
         <small id="fecha"></small>
     </footer>
+    <script>
+        function adjustRating(rating) {
+            document.getElementById("ratingvalue").innerHTML = rating;
+        }
+    </script>
 </body>
 </html>

@@ -300,6 +300,11 @@ figure img {
     transition: filter 0.5s;
 }
 /***************************FORMULARIO STORM CENTER*************************/
+form div.modulocontenedor
+{
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
 .modulocontenedor
 {
     display:flex;
@@ -310,6 +315,10 @@ figure img {
     display: grid;
     margin-bottom: 15px;
 }
+
+input[type=submit],
+.modulocontenedor select,
+.modulocontenedor textarea,
 .modulocontenedor label input
 {
     margin-top: 5px;
@@ -318,6 +327,14 @@ figure img {
     border-radius: 5px;
     border:0px;
 }
+
+.modulocontenedor textarea
+{
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
 div.areYouDanger
 {
     margin: 0px;
@@ -333,4 +350,28 @@ div.areYouDanger label
 .contenedorFormulario.contentbox
 {
     background-color: #f7b731;
+}
+
+input[type=submit]
+{
+    padding: 15px;
+    background-color: #e8e8e8;
+    border: 0;
+    align-self: center;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+input[type=submit]:hover
+{
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#ratingvalue
+{
+    align-self: flex-end;
+
+    
+    /* order: 2; */
 }
