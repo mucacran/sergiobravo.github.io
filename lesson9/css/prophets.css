@@ -1,0 +1,66 @@
+h1,
+footer
+{
+    text-align: center;
+}
+
+.cards
+{
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    /* pilas */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    background-color: #e8e8e8;
+}
+
+.cards section
+{
+    width: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color:#f7b731;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid  rgba(0, 0, 0, 0.3);
+}
+
+h1,h2
+{
+    font-family: Raleway;
+}
+
+p{
+    font-family: Didact Gothic;
+}
+
+
+.cards section img
+{
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 40.5em) { /*32.5 == 520px*/
+    .cards
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media only screen and (max-width:400px) { /*32.5 == 520px*/
+    .cards
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
