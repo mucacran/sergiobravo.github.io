@@ -13,7 +13,7 @@ footer
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     /* pilas */
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 20% 20% 20% 20% 20%;
     background-color: #e8e8e8;
 }
