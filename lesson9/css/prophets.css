@@ -2,6 +2,14 @@ h1,
 footer
 {
     text-align: center;
+
+}
+
+footer
+{
+    margin: 20px auto;
+    padding: 20px 0px;
+
 }
 
 .cards

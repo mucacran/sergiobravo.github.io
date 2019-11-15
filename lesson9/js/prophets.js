@@ -39,3 +39,16 @@ for (let i = 0; i < prophets.length; i++ ) {
     //.setAttribute() 
 
 }});
+
+WebFont.load({
+    google: {
+        families: [
+            'Didact Gothic',
+            'Raleway:900'
+        ]
+    }
+});
+
+WebFontConfig = {
+    events: false
+  };
