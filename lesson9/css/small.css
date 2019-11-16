@@ -2,7 +2,6 @@
     Edit:   Sergio Bravo;
     Web: https://www.mucacran.com
 */
-
 *
 {
     font-family: Didact Gothic;
@@ -371,7 +370,52 @@ input[type=submit]:hover
 #ratingvalue
 {
     align-self: flex-end;
-
-    
     /* order: 2; */
+}
+
+/*******************************************INDEX***********************************/
+.cards
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    /* pilas */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+}
+
+.cards section
+{
+    width: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color:#f7b731;
+    margin: 0px;
+    text-align: center;
+    border: 1px solid  rgba(0, 0, 0, 0.3);
+}
+
+.cards section:first-child
+{
+    margin-right: 0px;
+}
+.cards section:last-child
+{
+    margin-left: 0px;
+}
+
+    .cards section:nth-child(2)
+    {
+        margin: 8px 0px;
+    }
+
+.cards section img
+{
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 15px 0px;
 }

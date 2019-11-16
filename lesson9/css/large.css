@@ -117,4 +117,35 @@ div.contenUno.contenUno
         color: #36454f;
         text-align: center;
     }
+    /***************************INDEX******************************/
+    .cards
+    {
+        grid-template-columns: 1fr 1fr 1fr;   
+    }
+
+    .cards section:first-child
+    {
+        margin-right: 8px;
+    }
+
+    .cards section:last-child
+    {
+        margin-left: 8px;
+    }
+
+    .cards section:nth-child(2)
+    {
+        margin: 0px 4px;
+    }
+    .cards section
+    {
+        width: auto;
+        box-sizing: border-box;
+        display: block;
+    }
+    .cards section img
+    {
+        width: 100%;
+        height: auto;
+    }
 }

@@ -83,4 +83,37 @@
         color: #36454f;
         text-align: center;
         }
+
+        .cards
+        {
+                
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+        }
+
+        .cards section
+        {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+
+        .cards section:first-child
+        {
+                margin-right: 0px;
+        }
+
+        .cards section:last-child
+        {
+                margin-left: 0px;
+        }
+        
+        .cards section img
+        {
+                width: 300px;
+        }
+        .cards section div
+        {
+                margin-right: 15px;
+        }
 }
