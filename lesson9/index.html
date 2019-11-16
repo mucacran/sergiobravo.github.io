@@ -17,7 +17,7 @@
    
     <!-- scripts -->
     <script src="js/menuAmburgesa.js"></script> <!-- menu responsive -->
-    <script src="js/fecha.js"></script> <!-- fecha en el footer -->
+    <script src="js/fecha.js" defer></script> <!-- fecha en el footer -->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" defer></script>
     <script src="js/webFont.js" defer></script>
@@ -28,7 +28,7 @@
     
     </style>
 </head>
-<body>
+<body onload="UpdateDates()">
     <div id="promocion"></div>
     <header>
         <div class="temaPrincipal">
@@ -56,7 +56,8 @@
             
         <div id="cards" class="cards">  </div>
 
-        <section  class="contenedores">
+        <section class="contenedores">
+                <h2 class="tituloContacto">Contacto</h2>
             <div class="contentbox contacto">
                 <img class="imagenCOntacto" src="img/mapa.jpg" alt="mapa de preston">
                 <div>
