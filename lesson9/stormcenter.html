@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston </title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!--para que se vea igual en todos los navegadores -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+   
+    <!-- scripts -->
+    <script src="js/menuAmburgesa.js"></script> <!-- menu responsive -->
+    <script src="js/fecha.js"></script> <!-- fecha en el footer -->
+    <script src="js/ladyload.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" defer></script>
+    <script src="js/webFont.js" defer></script>
+</head>
+
+<body onload="UpdateDates()">
+    <div id="promocion"></div>
+    <header>
+        <div class="temaPrincipal">
+            <img class="logo" src="img/logo.svg" alt="logo - Climatizate in your City">
+            <div style="display: inline;text-align: center">
+                    <h1 class="centrar">Climatizate in your City</h1>
+                    <span>This is the best place for acclimatize</span>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div>
+            <ul class="navigation">
+                <li><a href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#sodasptrings">Soda Springs</a></li>
+                <li><a href="#fishhaven">Fish Haven</a></li>
+                <li class="activity"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="contenedores">
+            <div class="contenedorFormulario contentbox">
+                <form method="get" action="thanks.html">
+                    <div class="modulocontenedor">
+                        <h3>Personal Information</h3>
+                        <label>Full Name:<input type="text" name="fullname" placeholder="" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
+                        <label>Email:<input type="email" name="email" placeholder="email@email.com"  autocomplete="off"></label>
+                        <label>Phone Number:<input type="tel" name="phone" required autocomplete="off"></label>
+                        <label>ZIP Code:<input type="text" name="zipcode" pattern="^\d{5,6}(?:[-\s]\d{4})?$" required autocomplete="off"></label>
+                    </div>
+                    
+                    <div class="modulocontenedor">
+                        <h3>Storm Report</h3>
+                        <label>Storm Date:<input type="date" name="date" ></label>
+                        <label>Storm Type:<input type="text" name="stormtype" list="storm">
+                            <datalist id="storm">
+                                <option value = "Flash Flood"></option>
+                                <option value = "Hail"></option>
+                                <option value = "Hurricane"></option>
+                                <option value = "Thunderstorm"></option>
+                                <option value = "Tornado"></option>
+                            </datalist>
+                        </label>
+                        <label><span >Storm Severity: <span id="ratingvalue">5</span></span>
+                        <input type="range" id="severity" value="5" min="1" max="10" step="1" list="sevsettings" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <datalist id="sevsettings">
+                                <option>1</option>   <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </datalist>
+                        </label>
+                        <label>
+                            Storm Region:
+                            <select name="region">
+                                <option value="select" disabled selected>Select Region...</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Sugar City">Sugar City</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+                        </label>
+                        <label>Are You In Danger:</label>
+                        <div class="areYouDanger">
+                            <label><input type="radio" name="dangerLevel" value="yes"><span > Yes</span></label>
+                            <label><input type="radio" name="dangerLevel" value="maybe"><span > Maybe</span></label>
+                            <label><input type="radio" name="dangerLevel" value="no"><span> No</span></label>
+                        </div>
+                    </div>
+                    <div class="modulocontenedor">
+                        <h3>Additional Information</h3>
+                        <label>
+                            Comments:
+                            <textarea name="additionalInfo"></textarea>
+                        </label>
+                    </div>
+                    <input type="submit" value="Send"> 
+                </form>
+            </div>
+            <div class="contentbox contacto">
+                    <img class="imagenCOntacto" src="img/mapa.jpg" alt="mapa de preston">
+                    <div>
+                        <p>
+                            <strong> The weather site </strong><br>
+                            <img class="iconosContactos" src="img/gps-icon-preston.jpg" alt="Imagen de ptreston"> 30 N 1 st E Preston, ID 86263 <br> <br>  
+                            <img class="iconosContactos" src="img/telefono.png" alt="Imagen de ptreston"> 999.999.9999 <br>
+                            <img class="iconosContactos" src="img/mail.png" alt="Imagen de ptreston"> theweathersite@tws.com
+                        </p>
+                        <p>
+                            <img class="socialMediaImg" src="img/facebook.png" alt="social media preston">
+                            <img class="socialMediaImg" src="img/pinteres.png" alt="social media preston">
+                            <img class="socialMediaImg" src="img/twiter.png" alt="social media preston">
+                            <img class="socialMediaImg" src="img/wasap.png" alt="social media preston">
+                        </p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <small>
+            © <span id="copyrightdate"></span> | Sergio Bravo | Ecuador | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </small>
+        <br>
+        <small id="fecha"></small>
+    </footer>
+    <script>
+        function adjustRating(rating) {
+            document.getElementById("ratingvalue").innerHTML = rating;
+        }
+    </script>
+</body>
+</html>
