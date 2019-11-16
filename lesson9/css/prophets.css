@@ -2,6 +2,18 @@ h1,
 footer
 {
     text-align: center;
+
+}
+
+footer
+{
+    margin: 20px auto;
+    padding: 20px 0px;
+
+}
+
+p{
+    margin: 0px;
 }
 
 .cards
@@ -44,6 +56,7 @@ p{
     width: 80%;
     height: auto;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 15px 0px;
 }
 
 
