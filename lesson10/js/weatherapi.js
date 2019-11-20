@@ -1,7 +1,7 @@
 var server = 'api.openweathermap.org';
 var api = '5cd682059cff3541db92f27dcde7121d';
 var prestonIdaho = '5604473';
-var city = ''
+var city = '';
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${prestonIdaho}&appid=${api}`;
 
 fetch(apiURL)
