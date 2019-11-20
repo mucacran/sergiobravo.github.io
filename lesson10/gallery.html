@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston </title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!--para que se vea igual en todos los navegadores -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+   
+    <!-- scripts -->
+    <script src="js/menuAmburgesa.js"></script> <!-- menu responsive -->
+    <script src="js/fecha.js"></script> <!-- fecha en el footer -->
+    <script src="js/ladyload.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" defer></script>
+    <script src="js/webFont.js" defer></script>
+</head>
+
+<body onload="UpdateDates()">
+    <div id="promocion"></div>
+    <header>
+        <div class="temaPrincipal">
+            <img class="logo" src="img/logo.svg" alt="logo - Climatizate in your City">
+            <div style="display: inline;text-align: center">
+                    <h1 class="centrar">Climatizate in your City</h1>
+                    <span>This is the best place for acclimatize</span>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div>
+            <ul class="navigation">
+                <li><a href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#sodasptrings">Soda Springs</a></li>
+                <li><a href="#fishhaven">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li  class="activity"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="contenedores">
+            <h2 class="centrar">Weather Gallery</h2>
+            <div class="contenedor">
+                <figure>
+                    <img class="imagen" src="img/fondo.jpg" data-src="img/jardinverde.jpg" alt="jardinverde">
+                    <figcaption>Green garden</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/fondo.jpg" data-src="img/rosadorojo.jpg" alt="rosadorojo">
+                    <figcaption>Beautiful sunrise</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/fondo.jpg" data-src="img/riofrio.jpg" alt="riofrio">
+                    <figcaption>Very cold</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/fondo.jpg" data-src="img/lago.jpg" alt="lago">
+                    <figcaption>Dusk</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/fondo.jpg" data-src="img/cuadropintura.jpg" alt="cuadropintura">
+                    <figcaption>Green landscape</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/fondo.jpg" data-src="img/paisajeverde.jpg" alt="paisajeverde">
+                    <figcaption>Nice day</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/fondo.jpg" data-src="img/arcoiris.jpg" alt="lago">
+                    <figcaption>Cute rainbow</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/fondo.jpg" data-src="img/tormenta.jpg" alt="cuadropintura">
+                    <figcaption>Storm in the city</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagen" src="img/fondo.jpg" data-src="img/solcalido.jpg" alt="paisajeverde">
+                    <figcaption>A nice day in the woods</figcaption>
+                </figure>               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small>
+            © <span id="copyrightdate"></span> | Sergio Bravo | Ecuador | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </small>
+        <br>
+        <small id="fecha"></small>
+    </footer>
+</body>
+</html>
+
+<!-- .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+ } -->
