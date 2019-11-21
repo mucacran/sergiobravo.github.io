@@ -416,14 +416,7 @@ input[type=submit]:hover
 {
     order: 3;
 }
-.cards section:nth-child(2)
-{
-    order: 0;
-}
-.cards section:nth-child(3)
-{
-    order: 0;
-}
+
 
 .cards section img
 {

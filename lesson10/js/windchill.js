@@ -32,6 +32,7 @@ function windChill()
     speed = parseFloat(document.getElementById('speed').innerHTML);
     temp = document.getElementById('temp');
 
+    console.table(high,speed);
     askNA(high,speed); 
 }
 
