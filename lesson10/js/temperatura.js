@@ -4,7 +4,7 @@ var prestonIdaho = '5604473';
 var medidaUnidad = 'imperial';
 var city = '';
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${prestonIdaho}&appid=${api}&units=${medidaUnidad}`;
-
+/***********************************/
 var currently   = document.getElementById('currently');
 var high        = document.getElementById('high');
 var temp        = document.getElementById('temp');
@@ -16,27 +16,29 @@ var thu = document.getElementById('thu');
 var fri = document.getElementById('fri');
 var sat = document.getElementById('sat');
 var sun = document.getElementById('sun');
+/**************************/
+var temperaturaHight = 0;
+var viento = 0;
 
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        //console.table(jsObject.main);
+        //console.log(apiURL);
         humidity.innerHTML = jsObject.main.humidity;
         speed.innerHTML = jsObject.wind.speed;
         high.innerHTML = jsObject.main.temp;
+        currently.innerHTML = jsObject.weather[0].main;
+        windChill(parseFloat(high.innerHTML),parseFloat(speed.innerHTML));  
 });
 
-
-
-function windChill()
+windChill();
+function windChill(high,speed)
 {
-    var high = parseFloat(high.innerHTML);
-    var speed = parseFloat(speed.innerHTML);
-
-    
-    askNA(high,speed); 
+    temperaturaHight = high;
+    viento = speed;
+    //console.log(high + ' - ' + speed);
+    askNA(temperaturaHight,viento); 
 }
-
 
 function calculate(high,speed)
 {
@@ -58,3 +60,4 @@ function askNA(high,speed)
         calculate(high,speed);
     }
 }
+//https://www.calculator.net/wind-chill-calculator.html?windspeed=9.17&windspeedunit=mph&airtemperature=35.67&airtemperatureunit=fahrenheit&x=78&y=21
