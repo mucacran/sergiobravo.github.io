@@ -3,7 +3,8 @@ var api = '5cd682059cff3541db92f27dcde7121d';
 var prestonIdaho = '5604473';
 var medidaUnidad = 'imperial';
 var city = '';
-const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${prestonIdaho}&appid=${api}&units=${medidaUnidad}`;
+var typoShow = ['weather','forecast']
+const apiURL = `https://api.openweathermap.org/data/2.5/${typoShow[0]}?id=${prestonIdaho}&units=${medidaUnidad}&APPID=${api}`;
 
 fetch(apiURL)
   .then((response) => response.json())
