@@ -46,7 +46,7 @@ function calculate(high, speed) {
     tres = 0.4275 * high * Math.pow(speed, 0.16);
 
     f = uno - dos + tres;
-    temp.innerHTML = parseInt(f);
+    temp.innerHTML = parseInt(f) + '°F';
 }
 
 function askNA(high, speed) {
