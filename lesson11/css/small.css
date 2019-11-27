@@ -1,0 +1,434 @@
+/*
+    Edit:   Sergio Bravo;
+    Web: https://www.mucacran.com
+*/
+*
+{
+    font-family: Didact Gothic;
+    font-size: 18px;
+    color: #333333;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: raleway;
+    color: #36454f;
+    font-weight: 900;
+}
+
+header
+{
+    background-color: #e8e8e8;
+    padding: 50px 0px;
+}
+
+nav{
+    background-color: #36454f;
+}
+
+.centrar
+{
+    margin: 0px auto;
+    text-align: center;
+}
+
+main,
+footer,
+nav.nav div{
+	margin: 0 auto;
+	max-width: 760px;
+    background-color: #36454f;
+    box-sizing: border-box;
+}
+
+footer
+{
+    text-align: center;
+    padding: 24px;
+    background-color:#f7b731;
+    box-sizing: border-box;
+}
+.navigation {
+	list-style: none;
+	text-align: center;
+    padding: 0;
+    margin-top: 0px;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: #fff;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation li:hover,
+.navigation a:hover {
+	color: #333333;
+	background-color:#fed330;
+	font-weight: 600;
+}
+
+.navigation li.activity:hover,
+.navigation li.activity a:hover {
+	color: #333333;
+	background-color:white;
+}
+
+/*****************************************************/
+/*          MI CSS                                   */
+/*****************************************************/
+.temaPrincipal
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo
+{
+    width: 5rem;
+    height: auto;
+    font-size: 5rem;
+    margin-right: 20px;
+    color: #36454f;
+}
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
+
+div.espacio
+{
+    width: 100%;
+    height: 50px;
+}
+
+main 
+{
+    background-color: white;
+}
+
+h2.nombrePagina
+{
+    background: white;
+    text-align: center;
+}
+
+div.contentbox.contenUno
+{
+    position: relative;
+}
+
+.contenedores div
+{
+    margin: 15px auto;
+    padding: 15px;
+    background-color: rgba(232, 232, 232, 0.8);
+    border: 0px solid #36454f;
+    box-sizing: border-box;
+}
+
+div.cuadroInterior
+{
+    width: 250px;
+    position: absolute;
+    top: 0px;
+    border: 0px;
+    border-style: none;
+    margin-left: 15px;
+}
+
+div.cuadroInterior table tr td.textAlign
+{
+    text-align: right;
+    color: #36454f;
+}
+.contentbox.forecast table,
+div.cuadroInterior table
+{
+    margin: 0px auto;
+}
+
+div.contentbox.forecast
+{
+    text-align: center;
+    background-color: white;
+}
+
+.contentbox.forecast table
+{
+    width: 400px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    border-collapse: collapse;
+}
+.semanaTemperatura
+{
+    width: 80%;
+}
+
+.contentbox.forecast table tr:first-child td{
+    background-color: #e8e8e8;
+}
+
+.contentbox.forecast table tr td
+{
+    border-right: 1px solid #e8e8e8;
+}
+
+div.texto
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+img.imagenArticulo
+{
+    width: 300px;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px #36454f;
+}
+
+div.clearfix
+{
+    clear: both;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+div.contentbox.contacto
+{
+    display: flex;
+    align-items: center;
+}
+
+.imagenCOntacto
+{
+    width: 400px;
+}
+
+img.iconosContactos
+{
+    width: 15px;
+    height: auto;
+}
+
+p img.socialMediaImg
+{
+    width: 34px;
+    height: auto;
+}
+
+@media (max-width: 519px)
+{
+    picture::before
+    {
+        content: "Smoll" !important;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 50px;
+        color: red;
+    }
+    div.contentbox.contenUno
+    {
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+    }
+    div.contentbox.contenUno img
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*****************************************************************GALLERY************************************************************************/
+.contenedor
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    transition: grid-template-columns 2s;
+}    
+
+.contenedor figure
+{
+    margin: 0px;
+    background-color: #f7b731;
+    margin: 0 auto;
+    margin-bottom: 30px;  
+    width: auto;
+    box-sizing:border-box;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+
+.contenedor figure img
+{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor figure figcaption
+{
+    padding: 15px 0px;
+    color: #36454f;
+    text-align: center;
+}
+
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+/***************************FORMULARIO STORM CENTER*************************/
+form div.modulocontenedor
+{
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+.modulocontenedor
+{
+    display:flex;
+    flex-direction:column;
+}
+.modulocontenedor label
+{
+    display: grid;
+    margin-bottom: 15px;
+}
+
+input[type=submit],
+.modulocontenedor select,
+.modulocontenedor textarea,
+.modulocontenedor label input
+{
+    margin-top: 5px;
+    padding: 15px;;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border:0px;
+}
+
+.modulocontenedor textarea
+{
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+div.areYouDanger
+{
+    margin: 0px;
+    padding: 0px;
+    
+}
+div.areYouDanger label
+{
+    display: flex;
+    align-content: flex-start;   
+}
+
+.contenedorFormulario.contentbox
+{
+    background-color: #f7b731;
+}
+
+input[type=submit]
+{
+    padding: 15px;
+    background-color: #e8e8e8;
+    border: 0;
+    align-self: center;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+input[type=submit]:hover
+{
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#ratingvalue
+{
+    align-self: flex-end;
+    /* order: 2; */
+}
+
+/*******************************************INDEX***********************************/
+.tituloContacto
+{
+    display: none;
+}
+.cards
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    /* pilas */
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+}
+
+.cards section
+{
+    width: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color:#f7b731;
+    margin: 0px;
+    text-align: center;
+    border: 1px solid  rgba(0, 0, 0, 0.3);
+}
+
+.cards section:first-child
+{
+    margin-right: 0px;
+}
+.cards section:last-child
+{
+    margin-left: 0px;
+}
+
+.cards section:nth-child(1)
+{
+    order: 3;
+}
+.cards section:nth-child(2)
+{
+    order: 0;
+}
+.cards section:nth-child(3)
+{
+    order: 0;
+}
+
+.cards section img
+{
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 15px 0px;
+}

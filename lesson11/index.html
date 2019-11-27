@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston </title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--para que se vea igual en todos los navegadores -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+
+    <!-- scripts -->
+    <script src="js/menuAmburgesa.js"></script> <!-- menu responsive -->
+    <script src="js/fecha.js" defer></script> <!-- fecha en el footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" defer></script>
+    <script src="js/webFont.js" defer></script>
+    <script src="js/citys.js" defer></script>
+</head>
+
+<body onload="UpdateDates()">
+    <div id="promocion"></div>
+    <header>
+        <div class="temaPrincipal">
+            <img class="logo" src="img/logo.svg" alt="logo - Climatizate in your City">
+            <div style="display: inline;text-align: center">
+                <h1 class="centrar">Climatizate in your City</h1>
+                <span>This is the best place for acclimatize</span>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div>
+            <ul class="navigation">
+                <li><a href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li class="activity"><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+
+        <div id="cards" class="cards"> </div>
+
+        <section class="contenedores">
+            <div class="contentbox">
+                <h2>About Climatizate in your City</h2>
+                <p>Climatizate in your City is a website dedicated to giving information about the weather in specific
+                    places that you need to know to know how to go prepared.</p>
+            </div>
+        </section>
+
+        <section class="contenedores">
+            <h2 class="tituloContacto">Contacto</h2>
+            <div class="contentbox contacto">
+                <img class="imagenCOntacto" src="img/mapa.jpg" alt="mapa de preston">
+                <div>
+                    <p>
+                        <strong> The weather site </strong><br>
+                        <img class="iconosContactos" src="img/gps-icon-preston.jpg" alt="Imagen de ptreston"> 30 N 1 st
+                        E Preston, ID 86263 <br> <br>
+                        <img class="iconosContactos" src="img/telefono.png" alt="Imagen de ptreston"> 999.999.9999 <br>
+                        <img class="iconosContactos" src="img/mail.png" alt="Imagen de ptreston"> theweathersite@tws.com
+                    </p>
+                    <p>
+                        <img class="socialMediaImg" src="img/facebook.png" alt="social media preston">
+                        <img class="socialMediaImg" src="img/pinteres.png" alt="social media preston">
+                        <img class="socialMediaImg" src="img/twiter.png" alt="social media preston">
+                        <img class="socialMediaImg" src="img/wasap.png" alt="social media preston">
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small>
+            © <span id="copyrightdate"></span> | Sergio Bravo | Ecuador | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a>
+        </small>
+        <br>
+        <small id="fecha"></small>
+    </footer>
+</body>
+
+</html>

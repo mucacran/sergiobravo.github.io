@@ -1,0 +1,119 @@
+@media (max-width:799px)
+{
+        div.contentbox.contenUno img
+        {
+                width: 100%;
+                height: auto;
+        }
+        picture::before
+        {
+                content: "Mediun";
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                font-size: 50px;
+                color: red;
+        }
+}
+
+@media (max-width:768px)
+{
+        div.contentbox.contacto
+        {
+            display: block;
+            text-align: center;
+        }
+}
+
+@media only screen and (min-width: 32.5em) { /*32.5 == 520px*/
+	.navigation {
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {        
+        display: flex;
+        flex: 1 1 100%;
+        height: 75px;
+        align-items: center;
+        justify-content: center;
+	}
+	.navigation li a {
+		color: white;
+    }
+
+    .navigation li.activity,
+    .navigation li.activity > a
+    {
+        background-color: white;
+        color: #333333;
+    }
+
+/*****************************************************************GALLERY************************************************************************/
+        .contenedor
+        {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        }    
+
+        .contenedor figure
+        {
+        margin: 0px;
+        background-color: #f7b731;
+        margin: 0 auto;
+        margin-bottom: 30px;  
+        width: auto;
+        box-sizing:border-box;
+        }
+
+        .contenedor figure img
+        {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+        }
+
+        .contenedor figure figcaption
+        {
+        padding: 15px 0px;
+        color: #36454f;
+        text-align: center;
+        }
+
+        .cards
+        {
+                
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+        }
+
+        .cards section
+        {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+
+        .cards section:first-child
+        {
+                margin-right: 0px;
+        }
+
+        .cards section:last-child
+        {
+                margin-left: 0px;
+        }
+        
+        .cards section img
+        {
+                width: 300px;
+        }
+        .cards section div
+        {
+                margin-right: 15px;
+        }
+}

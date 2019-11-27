@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston </title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!--para que se vea igual en todos los navegadores -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+   
+    <!-- scripts -->
+    <script src="js/menuAmburgesa.js"></script> <!-- menu responsive -->
+    <script src="js/fecha.js"></script> <!-- fecha en el footer -->
+    <script src="js/temperatura.js" defer></script> <!-- para conseguir el clima -->
+</head>
+
+<body onload="UpdateDates()">
+    <div id="promocion"></div>
+    <header>
+        <div class="temaPrincipal">
+            <img class="logo" src="img/logo.svg" alt="logo - Climatizate in your City">
+            <div style="display: inline;text-align: center">
+                    <h1 style="margin: 0px">Climatizate in your City</h1>
+                    <span>This is the best place for acclimatize</span>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div>
+            <ul class="navigation">
+                <li><a href="#menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li class="activity"><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="contenedores">
+            <h2 class="nombrePagina">Preston Idaho</h2>
+            <div class="contentbox contenUno">
+                <div class="cuadroInterior">
+                    <h3 style="text-align: center">
+                        Weather Summary
+                    </h3>
+                    <hr>
+                    <table>
+                        <tr style="border-bottom: 1px solid #000">
+                            <td class="textAlign"><b> Currently:</b></td><td> <span id="currently">     Sunnys</span></td>
+                        </tr>
+                        <tr>
+                            <td class="textAlign"> <b>High: </b></td><td><span      id="high"></span> °F</td>
+                        </tr>
+                        <tr>
+                            <td class="textAlign"> <b>Wind Chill:</b></td><td><span id="temp">0</span></td>
+                        </tr>
+                        <tr>
+                            <td class="textAlign"> <b>Humidity: </b></td><td><span  id="humidity"></span>%</td>
+                        </tr>
+                         <tr>
+                             <td class="textAlign"><b>Wind Speed:</b></td><td><span id="speed"></span>mph</td>
+                         </tr>
+                    </table>
+                </div>
+                <picture>
+                    <source media="(max-width: 519px)" srcset="img/small.jpg">
+                        <source media="(max-width: 799px)" srcset="img/medium.jpg">
+                    <source media="(min-width: 800px)" srcset="img/large.jpg">
+                    <img src="img/large.jpg" alt="preston">
+                  </picture>
+            </div>
+            <div class="contentbox forecast">
+                <h3>5 Day Forecast</h3>
+                <table>
+                    <tr>
+                        <td id="dayWed"></td>
+                        <td id="dayThu"></td>
+                        <td id="dayFri"></td>
+                        <td id="daySat"></td>
+                        <td id="daySun"></td>
+                    </tr>
+                    <tr>
+                        <td id="wedImg"> </td>
+                        <td id="thuImg"> </td>
+                        <td id="friImg"> </td>
+                        <td id="satImg"> </td>
+                        <td id="sunImg"> </td>
+                    </tr>
+                    <tr>
+                        <td><span id="wed"></span></td>
+                        <td><span id="thu"></span></td>
+                        <td><span id="fri"></span></td>
+                        <td><span id="sat"></span></td>
+                        <td><span id="sun"></span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contentbox">
+                    <img class="imagenArticulo" src="img/preston-imagen-articulo.jpg" alt="imagen article">
+                <h3>    Founders Day Fresco</h3>
+                <i>by Sergio Bravo and Wikipedia</i>
+                <div class="texto"> 
+                    <p>
+                        Preston is a city located in Franklin County in the US state of Idaho. In the 2010 Census it had a population of 5,204 inhabitants and a population density of 301.78 people per km².
+                    </p>
+                    <p>
+                        Preston is located at coordinates 42 ° 5′56 ″ N 111 ° 52′42 ″ W. According to the United States Census Bureau, Preston has a total area of 17.24 km², of which 17.22 km² corresponds to the mainland and (0.12%) 0.02 km² is water.
+                    </p>
+                    <p>
+                        According to the 2010 census, there were 5204 people residing in Preston. The population density was 301.78 inhabitants / km². Of the 5204 inhabitants, Preston was made up of 0.09% white, 0.21% were African American, 0.73% were Native American, 0.21% were Asian, 0.08% were Pacific Islanders, 3.32% were from other races and 1.75 % belonged to two or more races. Of the total population 7.51% were Hispanic or Latino of any race.
+                    </p>
+                    <a href="#"><strong>READ MORE</strong></a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="contentbox contacto">
+                <img class="imagenCOntacto" src="img/mapa.jpg" alt="mapa de preston">
+                <div>
+                    <p>
+                        <strong> The weather site </strong><br>
+                        <img class="iconosContactos" src="img/gps-icon-preston.jpg" alt="Imagen de ptreston"> 30 N 1 st E Preston, ID 86263 <br> <br>  
+                        <img class="iconosContactos" src="img/telefono.png" alt="Imagen de ptreston"> 999.999.9999 <br>
+                        <img class="iconosContactos" src="img/mail.png" alt="Imagen de ptreston"> theweathersite@tws.com
+                    </p>
+                    <p>
+                        <img class="socialMediaImg" src="img/facebook.png" alt="social media preston">
+                        <img class="socialMediaImg" src="img/pinteres.png" alt="social media preston">
+                        <img class="socialMediaImg" src="img/twiter.png" alt="social media preston">
+                        <img class="socialMediaImg" src="img/wasap.png" alt="social media preston">
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small>
+            © <span id="copyrightdate"></span> | Sergio Bravo | Ecuador | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </small>
+        <br>
+        <small id="fecha"></small><br>
+        <small>Thanks to <a href="https://openweathermap.org/">www.openweathermap.org</a> for the API</small>
+    </footer>
+    <script>
+        promocion();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+    <script src="js/webFont.js"></script>
+
+</body>
+</html>
