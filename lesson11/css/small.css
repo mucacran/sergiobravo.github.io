@@ -432,3 +432,17 @@ input[type=submit]:hover
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin: 15px 0px;
 }
+/************PRESTON.html + 2 htmls****************************/
+.contentbox.eventoPreston
+{
+    text-align: center;
+}
+.evento ~ h3,
+.evento
+{
+    text-align: center;
+}
+.contentbox.eventoPreston picture img{
+    width: 100%;
+    height: auto;
+}

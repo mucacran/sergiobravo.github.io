@@ -123,6 +123,14 @@
                     <div class="clearfix"></div>
                 </div>
             </div>
+            <div class="contentbox eventoPreston">
+                <picture>
+                    <img src="img/evento-preston-large.jpg" alt="event preston idaho">
+                </picture>
+                <h3> Upcoming Events in Preston </h3>
+                <p id="eventosodaspring" class="evento"></p>
+                </div>
+            </div>
             <div class="contentbox contacto">
                 <img class="imagenCOntacto" src="img/mapa.jpg" alt="mapa de preston">
                 <div>
@@ -155,6 +163,31 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
     <script src="js/webFont.js"></script>
+    <script >
+        const eventos = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        let eventosodaspring = document.getElementById('eventosodaspring');
+        var numEvent = 0;
+
+fetch(eventos)
+    .then((reseventosjs) => reseventosjs.json())
+    .then((eventosjs) => {
+        var eventosVar = eventosjs['towns'];
+        for(var i = 0;i < eventosVar.length; i++)
+        {
+            if(eventosVar[i].name == 'Soda Springs')
+            {
+                for(var j = 0;j < eventosVar[i].events.length; j++)
+                {
+                    var arrayEventoLinea = eventosVar[i].events[j].split(':');
+                    eventosodaspring.innerHTML += '<b>' + arrayEventoLinea[0] + ': </b>' + arrayEventoLinea[1] + "<br>";
+                    console.table(eventosodaspring.innerHTML);
+                }
+            }
+        }
+
+    });
+    
+    </script>
 
 </body>
 </html>

@@ -76,24 +76,3 @@ fetch(climatizate)
         }
     });
 
-const eventos = 'https://byui-cit230.github.io/weather/data/towndata.json';
-var evemtoId = document.getElementById('eventoPreston');
-var numEvent = 0;
-console.log(eventos);
-fetch(eventos)
-    .then((reseventosjs) => reseventosjs.json())
-    .then((eventosjs) => {
-        var eventosVar = eventosjs['towns'];
-        for(var i = 0;i < eventosVar.length; i++)
-        {
-            if(eventosVar[i].name == 'Preston')
-            {
-                for(var j = 0;j < eventosVar[i].events.length; j++)
-                {
-                    evemtoId.innerHTML += eventosVar[i].events[j];
-                    console.table(evemtoId.innerHTML);
-                }
-            }
-        }
-
-    });

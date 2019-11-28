@@ -123,8 +123,12 @@
                     <div class="clearfix"></div>
                 </div>
             </div>
-            <div class="contentbox">
-                <div id="eventoPreston"></div>
+            <div class="contentbox eventoPreston">
+                <picture>
+                    <img src="img/evento-preston-large.jpg" alt="event preston idaho">
+                </picture>
+                <h3> Upcoming Events in Preston </h3>
+                <p id="eventoPreston" class="evento"></p>
                 </div>
             </div>
             <div class="contentbox contacto">
@@ -159,6 +163,27 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
     <script src="js/webFont.js"></script>
-
+    <script>
+        const eventos = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        let evemtoId = document.getElementById('eventoPreston');
+        var numEvent = 0;
+        console.log(eventos);
+        fetch(eventos)
+            .then((reseventosjs) => reseventosjs.json())
+            .then((eventosjs) => {
+                var eventosVar = eventosjs['towns'];
+                for(var i = 0;i < eventosVar.length; i++)
+                {
+                    if(eventosVar[i].name == 'Preston')
+                    {
+                        for(var j = 0;j < eventosVar[i].events.length; j++)
+                        {
+                            var arrayEventoLinea = eventosVar[i].events[j].split(':');
+                            evemtoId.innerHTML += '<b>' + arrayEventoLinea[0] + ': </b>' + arrayEventoLinea[1] + "<br>";
+                        }
+                    }
+                }
+            });
+    </script>
 </body>
 </html>
