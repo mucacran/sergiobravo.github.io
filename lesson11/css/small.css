@@ -235,7 +235,7 @@ p img.socialMediaImg
 {
     picture::before
     {
-        content: "Smoll" !important;
+        content: "" !important;
         position: absolute;
         top: 15px;
         right: 15px;
