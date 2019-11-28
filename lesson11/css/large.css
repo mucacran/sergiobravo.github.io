@@ -125,7 +125,7 @@ div.contenUno.contenUno
 
     .cards section:first-child
     {
-        margin-right: 8px;
+        margin-right: 0px;
     }
 
     .cards section:last-child
