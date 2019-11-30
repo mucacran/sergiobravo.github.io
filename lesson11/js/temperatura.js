@@ -76,3 +76,25 @@ fetch(climatizate)
         }
     });
 
+const eventos = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    let evemtoId = document.getElementById('evento');
+    let atributoData = evemtoId.getAttribute('data-city');
+    
+    var numEvent = 0;
+    console.log(eventos);
+    fetch(eventos)
+        .then((reseventosjs) => reseventosjs.json())
+        .then((eventosjs) => {
+            var eventosVar = eventosjs['towns'];
+            for(var i = 0;i < eventosVar.length; i++)
+            {
+                if(eventosVar[i].name == atributoData)
+                {
+                    for(var j = 0;j < eventosVar[i].events.length; j++)
+                    {
+                        var arrayEventoLinea = eventosVar[i].events[j].split(':');
+                        evemtoId.innerHTML += '<b>' + arrayEventoLinea[0] + ': </b>' + arrayEventoLinea[1] + "<br>";
+                    }
+                }
+            }
+        });
