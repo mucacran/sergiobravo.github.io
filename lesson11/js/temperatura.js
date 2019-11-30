@@ -79,9 +79,8 @@ fetch(climatizate)
 const eventos = 'https://byui-cit230.github.io/weather/data/towndata.json';
     let evemtoId = document.getElementById('evento');
     let atributoData = evemtoId.getAttribute('data-city');
-    
-    var numEvent = 0;
-    console.log(eventos);
+    let imgCity = document.getElementById('imgCity');
+     
     fetch(eventos)
         .then((reseventosjs) => reseventosjs.json())
         .then((eventosjs) => {
@@ -92,6 +91,8 @@ const eventos = 'https://byui-cit230.github.io/weather/data/towndata.json';
                 {
                     for(var j = 0;j < eventosVar[i].events.length; j++)
                     {
+                        imgCity.setAttribute('src', 'img/' + eventosVar[i].photo);
+                        imgCity.setAttribute('alt', eventosVar[i].motto);
                         var arrayEventoLinea = eventosVar[i].events[j].split(':');
                         evemtoId.innerHTML += '<b>' + arrayEventoLinea[0] + ': </b>' + arrayEventoLinea[1] + "<br>";
                     }
