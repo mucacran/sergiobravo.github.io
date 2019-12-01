@@ -116,4 +116,8 @@
         {
                 margin-right: 15px;
         }
+        /***********************INDEX************************/
+        
+        .cards section:nth-child(3) {
+                flex-direction: row-reverse;
 }
