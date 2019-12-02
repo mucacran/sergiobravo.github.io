@@ -446,3 +446,8 @@ input[type=submit]:hover
     width: 100%;
     height: auto;
 }
+/***********************************************/
+#imagen-city
+{
+    width: 100%;
+}

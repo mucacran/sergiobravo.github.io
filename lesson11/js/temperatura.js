@@ -1,10 +1,14 @@
 var server = 'api.openweathermap.org';
 var api = '5cd682059cff3541db92f27dcde7121d';
-var prestonIdaho = '5604473';
+/******* Segun la ciudad******/
+//var prestonIdaho = '5604473';
+let tableWeatherSummary = document.getElementById('table-weather-summary');
+let dataWeather = tableWeatherSummary.getAttribute('data-weather');
+/******** */
 var medidaUnidad = 'imperial';
 var typoShow = ['weather', 'forecast'];
 var city = '';
-const apiURL = `https://api.openweathermap.org/data/2.5/${typoShow[0]}?id=${prestonIdaho}&appid=${api}&units=${medidaUnidad}`;
+const apiURL = `https://api.openweathermap.org/data/2.5/${typoShow[0]}?id=${dataWeather}&appid=${api}&units=${medidaUnidad}`;
 /***********************************/
 var currently = document.getElementById('currently');
 var high = document.getElementById('high');
@@ -58,7 +62,7 @@ function askNA(high, speed) {
 }
 //https://www.calculator.net/wind-chill-calculator.html?windspeed=9.17&windspeedunit=mph&airtemperature=35.67&airtemperatureunit=fahrenheit&x=78&y=21
 /******************************************************************************************************************************/
-const climatizate = `https://api.openweathermap.org/data/2.5/${typoShow[1]}?id=${prestonIdaho}&appid=${api}&units=${medidaUnidad}`;
+const climatizate = `https://api.openweathermap.org/data/2.5/${typoShow[1]}?id=${dataWeather}&appid=${api}&units=${medidaUnidad}`;
 fetch(climatizate)
     .then((responde) => responde.json())
     .then((objClimatizate) => {
