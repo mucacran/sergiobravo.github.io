@@ -37,21 +37,22 @@ nav a {
 }
 nav a:hover {background-color: #444;}
 
-main{display: block; padding: 1rem $gutter;}
-main h1 {color: $primaryColor;
-    font-weight: $heavyWeight;
+main
+{
+    display: block; padding: 1rem $gutter;
+    h1 {color: $primaryColor;
+        font-weight: $heavyWeight;
+    }
+    figure{
+        margin: 0;
+        width: 100%;
+        img {width: 100%;}
+    }
+    figcaption {text-align: center; font-size: .8rem;}
 }
 
-main figure img {width: 100%;}
-main figure{
-    margin: 0;
-    width: 100%;
-    
-}
-main figcaption {text-align: center; font-size: .8rem;}
 
-
-
+main 
 
 footer {
     background-color: $primaryColor;

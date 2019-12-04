@@ -500,26 +500,23 @@ main {
   display: block;
   padding: 1rem 10%;
 }
-
 main h1 {
   color: #17e44c;
   font-weight: 700;
 }
-
-main figure img {
-  width: 100%;
-}
-
 main figure {
   margin: 0;
   width: 100%;
 }
-
+main figure img {
+  width: 100%;
+}
 main figcaption {
   text-align: center;
   font-size: .8rem;
 }
 
+main,
 footer {
   background-color: #17e44c;
   text-align: center;
@@ -533,7 +530,7 @@ footer {
   clear: both;
 }
 
-@media only screen and (min-width: 560px) and (min-width: 560px) {
+@media only screen and (min-width: 560px) {
   nav li {
     width: 25%;
     float: left;
@@ -552,10 +549,7 @@ footer {
     column-rule: 1px solid #ddd;
   }
 }
-@media only screen and (min-width: 560px) {
-  /* end of media query */
-}
-@media only screen and (min-width: 1028px) and (min-width: 1028px) {
+@media only screen and (min-width: 1028px) {
   header, nav, main, footer {
     max-width: 1200px;
     margin: auto;
@@ -580,8 +574,5 @@ footer {
   div.news {
     column-count: 3;
   }
-}
-@media only screen and (min-width: 1028px) {
-  /* end of media query */
 }
 /* end of media query */
