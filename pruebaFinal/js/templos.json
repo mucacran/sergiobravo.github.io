@@ -1,0 +1,50 @@
+ //https://churchofjesuschristtemples.org/guayaquil-ecuador-temple/
+ //https://www.churchofjesuschrist.org/temples/list?lang=spa
+ {
+  "templos": [
+    {
+      "name": "Templo de Ecuador",
+      "Address": "Calle 6ta y Avenida Rodrigo Chávez González Principado de las Lomas Urdesa Norte, Guayaquil",
+      "Telephone": "(+593) 4-371-8100",
+      "death": "27 June 1844",
+      "length": 14,
+      "order": 1,
+      "birthplace": "Vermont",
+      "numofchildren": 11,
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+    },
+    {
+      "name": "Brigham",
+      "lastname": "Young",
+      "birthdate": "01 June 1801",
+      "death": "29 August 1877",
+      "length": 30,
+      "order": 2,
+      "birthplace": "Vermont",
+      "numofchildren": 56,
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+    },
+    {
+      "name": "John",
+      "lastname": "Taylor",
+      "birthdate": "01 November 1808",
+      "death": "25 July 1887",
+      "length": 6,
+      "order": 3,
+      "birthplace": "England",
+      "numofchildren": 34,
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/john-taylor-82909-gallery.jpg"
+    },
+    {
+      "name": "Wilford",
+      "lastname": "Woodruff",
+      "birthdate": "01 March 1807",
+      "death": "02 September 1898",
+      "length": 9,
+      "order": 4,
+      "birthplace": "Connecticut",
+      "numofchildren": 34,
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/wilford-woodruff-82910-gallery.jpg"
+    }
+  ]
+}

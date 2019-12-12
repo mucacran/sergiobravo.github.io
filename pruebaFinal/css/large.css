@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1028px) {
+
+    main,
+    footer,
+    nav.nav,
+    div{
+        margin: 0 auto;
+        max-width: 760px;
+        background-color: var(--negro);
+        box-sizing: border-box;
+    }
+
+    .navigation li a
+    {
+        color: #F6F7F8;
+    }
+} /* end of media query */
