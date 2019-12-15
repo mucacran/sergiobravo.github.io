@@ -10,6 +10,11 @@ p
     font-size: 18px;
     color: #333333;
 }
+*
+{
+	box-sizing: border-box;
+	font-family: 'Work Sans';
+}
 
 /*****************************/
 .navigation {
@@ -24,6 +29,7 @@ p
 }
 .navigation li {
 	display: none;
+	transition: display 1s;
 }
 .navigation a {
 	display: block;
@@ -37,6 +43,8 @@ p
 	color: #fff;
 	background-color:#FF3366;
 	font-weight: 600;
+	-webkit-transition: background-color 1s; 
+  	transition: background-color 1s;
 }
 
 .navigation li.activity:hover,
@@ -44,14 +52,55 @@ p
 	color: #333333;
 	background-color:white;
 }
+
+.navigation li.activity,
+.navigation li.activity > a
+{
+	background-color: #2EC4B6 !important;
+	color: #011638;
+}
 /*Este hace que la magia del clik se dé, escribio esto para hacer timpo*/
 .responsive li {
 	display: block;
+	box-sizing: border-box;
+	transition: display 1s;
 }
 /******************************************/
 
-
+div.nenuNav,
 nav div ul
 {
     background-color: #011638;
+}
+
+.logoTitulo
+{
+	padding: 20px;
+	text-align: center;
+	position: relative;
+}
+
+.tituloHead,
+.sloganHead
+{
+	margin: 0;
+	margin-left: 0px;
+}
+
+.accion
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 15px;
+	background-color: #20A4F3;
+	color: white;
+	cursor: pointer;
+	font-size: 12px;
+}
+.accion:hover
+{
+	font-size: 16px;
+	background-color: #FF3366;
+	transition: background-color, font-size 0.5s;
 }

@@ -2,8 +2,8 @@
 
     main,
     footer,
-    nav.nav,
-    div{
+    .nemuNav,
+    .nemuNav div{
         margin: 0 auto;
         max-width: 760px;
         background-color: var(--negro);
@@ -13,5 +13,11 @@
     .navigation li a
     {
         color: #F6F7F8;
+        padding: 30px;
+        width: 100%;
+    }
+    nav
+    {
+        background-color: #011638 !important; 
     }
 } /* end of media query */
