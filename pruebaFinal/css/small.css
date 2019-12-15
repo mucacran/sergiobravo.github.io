@@ -1,7 +1,6 @@
 h1,h2,h3,h4,h5,h6  
 {
     font-family: 'Ultra', serif;
-    font-size: 2em;
     color: #011638;
 }
 p
@@ -16,6 +15,20 @@ p
 	font-family: 'Work Sans';
 }
 
+img[data-src] {
+	filter: blur(0.2em);
+}
+img
+{
+	width: 100%;
+	height: auto;
+
+	filter: blur(0em);
+	transition: filter 1s;
+}
+
+
+  
 /*****************************/
 .navigation {
     font-family: 'Work Sans', sans-serif;
@@ -73,6 +86,10 @@ nav div ul
     background-color: #011638;
 }
 
+.logo
+{
+	width: 50px;
+}
 .logoTitulo
 {
 	padding: 20px;
@@ -103,4 +120,17 @@ nav div ul
 	font-size: 16px;
 	background-color: #FF3366;
 	transition: background-color, font-size 0.5s;
+}
+
+#mapa
+{
+	border:0;
+	width: 100%;
+	height: 300px;
+}
+
+.galeryTemples
+{
+	grid-template-columns: auto ;
+    grid-template-rows: auto;
 }
