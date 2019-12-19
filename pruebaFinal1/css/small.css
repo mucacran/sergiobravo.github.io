@@ -17,6 +17,11 @@ p
 	font-family: 'Work Sans';
 }
 
+figure
+{
+	margin: 0;
+}
+
 img[data-src] {
 	filter: blur(0.2em);
 }
@@ -138,11 +143,31 @@ nav div ul
 	height: 300px;
 }
 
+/********************** OTROS TEMPLOS*******/
 .galeryTemples
 {
 	grid-template-columns: auto ;
     grid-template-rows: auto;
 }
+.galeryTemples div p
+{
+	text-align: center;
+}
+
+.galeryTemples div p a
+{
+	background-color: #011638;
+	padding: 10px;
+	margin: 15px 0;
+	color: #F6F7F8;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.galeryTemples div p a:hover
+{
+	background-color: #FF3366;
+}
+/******************************************/
 
 .iconosContactos
 {
