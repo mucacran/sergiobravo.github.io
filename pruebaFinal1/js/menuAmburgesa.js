@@ -9,3 +9,13 @@ function toggleMenu() {
 		console.log(elementClasses[i]);
 	}	
 }
+
+/******************************TAMAÑO DE LA PANTALLA******************** */
+
+var anchoPantalla = window.innerWidth;
+var altoPantalla = document.documentElement.clientHeight;
+
+
+
+console.log(anchoPantalla + ' - ' + altoPantalla);
+/*******************************FIN DL TAMAÑO************************************ */

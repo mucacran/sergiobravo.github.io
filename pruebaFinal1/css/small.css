@@ -1,7 +1,9 @@
 h1,h2,h3,h4,h5,h6  
 {
     font-family: 'Ultra', serif;
-    color: #011638;
+	color: #011638;
+	text-transform: uppercase;
+	font-weight: normal;
 }
 p
 {
@@ -26,10 +28,18 @@ img
 	filter: blur(0em);
 	transition: filter 1s;
 }
-
-
   
 /*****************************/
+div.contenedor
+{
+	padding: 0 15px;
+}
+
+.contenedor.nemuNav
+{
+	padding: 0;
+}
+
 .navigation {
     font-family: 'Work Sans', sans-serif;
 	list-style: none;
@@ -111,7 +121,7 @@ nav div ul
 	top: 0;
 	padding: 15px;
 	background-color: #FF3366;
-	color: white;
+	color: #011638 !important; 
 	cursor: pointer;
 	font-size: 12px;
 }
@@ -121,7 +131,7 @@ nav div ul
 	transition: font-size 0.5s;
 }
 
-#mapa
+.mapa
 {
 	border:0;
 	width: 100%;
@@ -157,4 +167,44 @@ nav div ul
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
+}
+
+section
+{
+	padding: 50px 0;
+}
+section:nth-child(2) {
+	background-color: #F6F7F8;
+}
+
+/* *******FOOTER******* */
+footer
+{
+	background-color: #011638;
+}
+
+footer h3
+{
+	color: white;
+	padding-top: 25px;
+}
+
+footer p.textocentrado
+{
+	margin: 0px;
+	padding: 25px 0;
+}
+footer p
+{
+	
+	color: #F6F7F8;
+}
+
+footer hr
+{
+	border-top: .5px solid rgba(255, 255, 255,1);
+	width: 80%;
+	height: 0px;
+	/* background-color:  */
+	opacity: 0.1;
 }

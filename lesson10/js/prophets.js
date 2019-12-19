@@ -38,7 +38,8 @@ for (let i = 0; i < prophets.length; i++ ) {
 
     //.setAttribute() 
 
-}});
+}
+});
 
 WebFont.load({
     google: {

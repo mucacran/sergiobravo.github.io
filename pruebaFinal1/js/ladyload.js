@@ -23,3 +23,19 @@ if('IntersectionObserver' in window) {
       loadImages(img);
     });
   }
+
+
+/******************WEB FONT************** */
+WebFont.load({
+  google: {
+      families: [
+          'Ultra',
+          'Work Sans'
+      ]
+  }
+});
+
+WebFontConfig = {
+  events: false
+};
+/********************************************* */
