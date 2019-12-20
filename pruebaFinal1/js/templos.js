@@ -19,7 +19,8 @@ fetch(apiURL)
                 temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '">' + 
                                         '<p> Address: ' + thetemplos[i].address + '</p>' +
                                         '<p> Telephone: ' + thetemplos[i].Telephone + '</p>' +
-                                        '<p> Telephone: ' + thetemplos[i].CorreoElectrico + '</p>';
+                                        '<p> Mail: ' + thetemplos[i].CorreoElectrico + '</p>' +
+                                        '<p> Services: ' + thetemplos[i].LosServicios + '</p>';
             }
             else if(false)
             {
