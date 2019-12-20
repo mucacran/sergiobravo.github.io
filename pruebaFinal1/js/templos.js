@@ -14,9 +14,12 @@ fetch(apiURL)
 
         for (let i = 0; i < thetemplos.length; i++ )
         {
-            if(temploMOstrar == 'templo-ecuador-guayaquil')
+            if(i == 0)
             {
-                temploID.innerHTML =  '<img src="' + thetemplos[i].imageurl + '"><p> Dirección: ' + thetemplos[i].address + '</p>';                 
+                temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '">' + 
+                                        '<p> Address: ' + thetemplos[i].address + '</p>' +
+                                        '<p> Telephone: ' + thetemplos[i].Telephone + '</p>' +
+                                        '<p> Telephone: ' + thetemplos[i].CorreoElectrico + '</p>';
             }
             else if(false)
             {
