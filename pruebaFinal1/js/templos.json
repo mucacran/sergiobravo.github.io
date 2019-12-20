@@ -28,24 +28,21 @@
         "Late: 12 jan 2020, 2 PM",
         "Night: 12 jan 2020, 8 PM"
       ],
-      "calendarioSierre": [
+      "calendarioSierre":
+      [
         {
-          "veintediesinueve": [
-            {
-              "Tuesday":"24 December 2019 (Limited Hours)",
-              "Wednesday": "25 December 2019 (Limited Hours)"
-            }
-          ],
-          "2020": [
-            "Wednesday, 1 January 2020 (Limited Hours)",
-            "Tuesday, 25 February 2020 (Limited Hours)",
-            "Monday, 2 March 2020 - Monday, 16 March 2020",
-            "Saturday, 4 April 2020 (Limited Hours)",
-            "Monday, 14 September 2020 - Monday, 28 September 2020",
-            "Saturday, 3 October 2020 (Limited Hours)",
-            "Thursday, 24 December 2020 (Limited Hours)",
-            "Friday, 25 December 2020 (Limited Hours)"
-          ]
+          "Tuesday":"24 December 2019 (Limited Hours)",
+          "Wednesday": "25 December 2019 (Limited Hours)"
+        },
+        {
+          "Wednesday": "1 January 2020 (Limited Hours)",
+          "Tuesday": "25 February 2020 (Limited Hours)",
+          "Monday": "2 March 2020 - Monday, 16 March 2020",
+          "Saturday": "4 April 2020 (Limited Hours)",
+          "Monday": "14 September 2020 - Monday, 28 September 2020",
+          "Saturday": "3 October 2020 (Limited Hours)",
+          "Thursday": "24 December 2020 (Limited Hours)",
+          "Friday": "25 December 2020 (Limited Hours)"
         }
       ],
       "imageurl": "https://mucacran.github.io/sergiobravo.github.io/pruebaFinal1/img/Guayaquil-Ecuador-Temple.jpg"

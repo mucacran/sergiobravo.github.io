@@ -24,7 +24,7 @@ fetch(apiURL)
                                         '<p> <b>History</b>: ' + thetemplos[i].historia + '</p>' +
                                         '<p> <b>Ordinance Schedule</b>: ' + thetemplos[i].calendarioOrdenanza + '</p>' +
                                         '<p> <b>Session Schedule</b>: ' + thetemplos[i].calendarioSecion + '</p>' +
-                                        '<p> <b>Temple Closure Schedule</b>: ' + thetemplos[i].calendarioSierre.veintediesinueve + '</p>';
+                                        '<p> <b>Temple Closure Schedule</b>: ' + thetemplos[i].calendarioSierre[0].Wednesday + '</p>';
 
             }
             else if(false)
