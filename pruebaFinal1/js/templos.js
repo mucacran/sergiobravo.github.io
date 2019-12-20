@@ -21,8 +21,10 @@ fetch(apiURL)
                                         '<p> <b>Telephone</b>: ' + thetemplos[i].Telephone + '</p>' +
                                         '<p> <b>Mail</b>: ' + thetemplos[i].CorreoElectrico + '</p>' +
                                         '<p> <b>Services</b>: ' + thetemplos[i].LosServicios + '</p>' +
-                                        '<p> <b>History</b>: ' + thetemplos[i].historia + '</p>';
-                                        '<p> <b>ordinance schedule</b>: ' + thetemplos[i].calendarioOrdenanza + '</p>';
+                                        '<p> <b>History</b>: ' + thetemplos[i].historia + '</p>' +
+                                        '<p> <b>Ordinance Schedule</b>: ' + thetemplos[i].calendarioOrdenanza + '</p>' +
+                                        '<p> <b>Session Schedule</b>: ' + thetemplos[i].calendarioSecion + '</p>' +
+                                        '<p> <b>Temple Closure Schedule</b>: ' + thetemplos[i].calendarioSierre.veintediesinueve + '</p>';
 
             }
             else if(false)

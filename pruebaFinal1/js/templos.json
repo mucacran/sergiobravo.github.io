@@ -30,9 +30,11 @@
       ],
       "calendarioSierre": [
         {
-          "2019": [
-            "Tuesday, 24 December 2019 (Limited Hours)",
-            "Wednesday, 25 December 2019 (Limited Hours)"
+          "veintediesinueve": [
+            {
+              "Tuesday":"24 December 2019 (Limited Hours)",
+              "Wednesday": "25 December 2019 (Limited Hours)"
+            }
           ],
           "2020": [
             "Wednesday, 1 January 2020 (Limited Hours)",
