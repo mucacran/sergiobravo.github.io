@@ -1,16 +1,52 @@
- //https://churchofjesuschristtemples.org/guayaquil-ecuador-temple/
- //https://www.churchofjesuschrist.org/temples/list?lang=spa
- {
+//https://www.churchofjesuschrist.org/temples/list?lang=spa
+//https://churchofjesuschristtemples.org/guayaquil-ecuador-temple/
+{
   "templos": [
     {
       "name": "Templo de Ecuador",
       "Address": "Calle 6ta y Avenida Rodrigo Chávez González Principado de las Lomas Urdesa Norte, Guayaquil",
-      "Telephone": "(+593) 4-371-8100",
-      "death": "27 June 1844",
-      "length": 14,
-      "order": 1,
-      "birthplace": "Vermont",
-      "numofchildren": 11,
+      "Telephone": "(+593) 43719200",
+      "Correo-Electrico": "templeguayaquil@lds.fin.ec",
+      "Los-Servicios": [
+        "Clothing rental available",
+        "Cafeteria available",
+        "Patron housing available",
+        "Distribution center nearby"
+      ],
+      "historia": [
+        "Announced : 31 March 1982",
+        "Groundbreaking : 10 August 1996",
+        "Dedicated : 1 August 1999"
+      ],
+      "calendario-ordenanza": [
+        "Baptism: 12 jan 2020",
+        "Initiatory: 12 jan 2020",
+        "Endowment: 12 jan 2020",
+        "Sealing: 12 jan 2020"
+      ],
+      "calendario-secion": [
+        "Morning: 12 jan 2020",
+        "Late: 12 jan 2020",
+        "Night: 12 jan 2020"
+      ],
+      "calendario-sierre": [
+        {
+          "2019": [
+            "Tuesday, 24 December 2019 (Limited Hours)",
+            "Wednesday, 25 December 2019 (Limited Hours)"
+          ],
+          "2020": [
+            "Wednesday, 1 January 2020 (Limited Hours)",
+            "Tuesday, 25 February 2020 (Limited Hours)",
+            "Monday, 2 March 2020 - Monday, 16 March 2020",
+            "Saturday, 4 April 2020 (Limited Hours)",
+            "Monday, 14 September 2020 - Monday, 28 September 2020",
+            "Saturday, 3 October 2020 (Limited Hours)",
+            "Thursday, 24 December 2020 (Limited Hours)",
+            "Friday, 25 December 2020 (Limited Hours)"
+          ]
+        }
+      ],
       "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
     },
     {
