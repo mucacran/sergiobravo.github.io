@@ -1,5 +1,5 @@
-var templo = document.getElementById('temple');
-var temploMOstrar = templo.getAttribute('data-templo');
+var temploID = document.getElementById('temple');
+var temploMOstrar = temploID.getAttribute('data-templo');
 
 const apiURL = "https://mucacran.github.io/sergiobravo.github.io/pruebaFinal1/js/templos.json";
 
@@ -16,8 +16,7 @@ fetch(apiURL)
         {
             if(temploMOstrar == 'templo-ecuador-guayaquil')
             {
-                templo.innerHTML =  '<img src="' + thetemplos[i].imageurl + '"> <p> Dirección: ' + thetemplos[i].address + '</p>';
-                                    
+                temploID.innerHTML =  '<img src="' + thetemplos[i].imageurl + '"><p> Dirección: ' + thetemplos[i].address + '</p>';                 
             }
             else if(false)
             {
