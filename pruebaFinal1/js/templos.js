@@ -16,7 +16,7 @@ fetch(apiURL)
         {
             if(temploMOstrar == 'templo-ecuador-guayaquil')
             {
-                templo.innerHTML =  '<img src="' + thetemplos[i].imageurl + '"> <p> Dirección: ' + thetemplos[i].Address + '</p>';
+                templo.innerHTML =  '<img src="' + thetemplos[i].imageurl + '"> <p> Dirección: ' + thetemplos[i].address + '</p>';
                                     
             }
             else if(false)
