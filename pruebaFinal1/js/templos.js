@@ -17,10 +17,13 @@ fetch(apiURL)
             if(i == 0)
             {
                 temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '">' + 
-                                        '<p> Address: ' + thetemplos[i].address + '</p>' +
-                                        '<p> Telephone: ' + thetemplos[i].Telephone + '</p>' +
-                                        '<p> Mail: ' + thetemplos[i].CorreoElectrico + '</p>' +
-                                        '<p> Services: ' + thetemplos[i].LosServicios + '</p>';
+                                        '<p> <b>Address</b>: ' + thetemplos[i].address + '</p>' +
+                                        '<p> <b>Telephone</b>: ' + thetemplos[i].Telephone + '</p>' +
+                                        '<p> <b>Mail</b>: ' + thetemplos[i].CorreoElectrico + '</p>' +
+                                        '<p> <b>Services</b>: ' + thetemplos[i].LosServicios + '</p>' +
+                                        '<p> <b>History</b>: ' + thetemplos[i].historia + '</p>';
+                                        '<p> <b>ordinance schedule</b>: ' + thetemplos[i].calendarioOrdenanza + '</p>';
+
             }
             else if(false)
             {
