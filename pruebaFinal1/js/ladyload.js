@@ -48,20 +48,20 @@ function nextSlide() {
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide showing';
 }
-
-// var slides = document.querySelectorAll('#slides .slide');
-// var currentSlide = 0;
-// var slideInterval = setInterval(nextSlide,2000);
-
-// function nextSlide() {
-//     for(var i = 0; i < loq.lenght; i++)
-//     {
-//       if()
-//       {
-//         var imagenSlider = ''
-//       }
-//     }
-
-// }
+/*********************MENU Flotador********************************* */
+var prevScrollpos = window.pageYOffset;
+console.log('1.' + prevScrollpos);
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  console.log('2.' + currentScrollPos);
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    // document.getElementById("navbar").style.position= 'relative';
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+    // document.getElementById("navbar").style.position= 'relative';
+  }
+  prevScrollpos = currentScrollPos;
+}
 /****************************************************** */
 
