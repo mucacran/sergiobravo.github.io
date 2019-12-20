@@ -1,15 +1,36 @@
-var templo = document.getElementById('templeGuayaquil');
+var templo = document.getElementById('temple');
+var temploMOstrar = templo.getAttribute('data-templo');
 
-const apiURL = `https://raw.githubusercontent.com/mucacran/sergiobravo.github.io/master/pruebaFinal1/js/templos.json`;
+const apiURL = "https://mucacran.github.io/sergiobravo.github.io/pruebaFinal1/js/templos.json";
 
 fetch(apiURL)
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject); 
+        //console.table(jsonObject); 
 
-        //const prophets = jsonObject['templos'];
+        const thetemplos = jsonObject['templos'];
+
+        for (let i = 0; i < thetemplos.length; i++ )
+        {
+            if(temploMOstrar == 'templo-ecuador-guayaquil')
+            {
+                templo.innerHTML = '<img src="' + thetemplos[i].imageurl +'">';
+                console.log(thetemplos[i].imageurl);
+            }
+            else if(flase)
+            {
+                console.log('pilas');
+            }
+            else if(flase)
+            {
+                console.log('pilas');
+            }
+            else{
+                console.log('pilas');
+            }
+        }
     }
     
 );

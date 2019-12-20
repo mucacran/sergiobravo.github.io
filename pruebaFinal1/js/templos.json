@@ -1,5 +1,6 @@
 {
-  "templos": [
+  "templos":
+  [
     {
       "name": "Templo de Ecuador",
       "Address": "Calle 6ta y Avenida Rodrigo Chávez González Principado de las Lomas Urdesa Norte, Guayaquil",
@@ -45,7 +46,7 @@
           ]
         }
       ],
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/church-history/joseph-smith-art-lds-37715-gallery.jpg"
+      "imageurl": "https://mucacran.github.io/sergiobravo.github.io/pruebaFinal1/img/Guayaquil-Ecuador-Temple.jpg"
     },
     {
       "name": "Brigham",
@@ -78,7 +79,7 @@
       "order": 4,
       "birthplace": "Connecticut",
       "numofchildren": 34,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/wilford-woodruff-82910-gallery.jpg"
+      "imageurl": "https://mucacran.github.io/sergiobravo.github.io/pruebaFinal1/img/Guayaquil-Ecuador-Temple.jpg"
     }
   ]
 }
