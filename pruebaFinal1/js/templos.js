@@ -29,7 +29,7 @@ fetch(apiURL)
                                         '<br>Tuesday ' + thetemplos[i].calendarioSierre[0].Wednesday + '</p>';
 
             }
-            else if(i == numData)
+            if(i == numData)
             {
                 temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '">' + 
                                         '<p> <b>Address</b>: ' + thetemplos[i].address + '</p>' +
@@ -43,7 +43,7 @@ fetch(apiURL)
                                         '<br>Tuesday ' + thetemplos[i].calendarioSierre[0].Wednesday + '</p>';
 
             }
-            else if(i == numData)
+            if(i == numData)
             {
                 temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '">' + 
                                         '<p> <b>Address</b>: ' + thetemplos[i].address + '</p>' +
@@ -57,7 +57,7 @@ fetch(apiURL)
                                         '<br>Tuesday ' + thetemplos[i].calendarioSierre[0].Wednesday + '</p>';
 
             }
-            else{
+            if(i == numData){
                 temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '">' + 
                                         '<p> <b>Address</b>: ' + thetemplos[i].address + '</p>' +
                                         '<p> <b>Telephone</b>: ' + thetemplos[i].Telephone + '</p>' +
