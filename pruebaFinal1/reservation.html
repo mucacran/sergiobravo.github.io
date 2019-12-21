@@ -60,100 +60,100 @@
     </div>
 
     <main>
-            <section>
-                <div class="contenedor">
-                    <h2>Why Make a Reservation?</h2>
-            <hr >
-            <p>The Lord has commanded us to be prepared in all things.
-                Temple Inn & Suites helps temple patrons to be prepared for their time in the temple by removing worries about accommodations, child care, and much more.
-                We seek to promote a spirit of peace and reverence so that patrons will be in the right mindset before entering the House of the Lord.
-                We believe that by preparing oneself mentally and physically, members of the church will find their visits to the temple more inspiring and enriching. The church has <a id="temple-entry-link" href="https://www.churchofjesuschrist.org/study/manual/preparing-to-enter-the-holy-temple/preparing-to-enter-the-holy-temple?lang=eng" target="_blank">provided additional aids</a>for use in preparing to enter the temple.</p>
+        <section>
+            <div class="contenedor">
+                <h2>Why Make a Reservation?</h2>
+                <hr >
+                <p>
+                    The Lord has commanded us to be prepared in all things.
+                    Temple Inn & Suites helps temple patrons to be prepared for their time in the temple by removing worries about accommodations, child care, and much more.
+                    We seek to promote a spirit of peace and reverence so that patrons will be in the right mindset before entering the House of the Lord.
+                    We believe that by preparing oneself mentally and physically, members of the church will find their visits to the temple more inspiring and enriching. The church has <a href="https://www.churchofjesuschrist.org/study/manual/preparing-to-enter-the-holy-temple/preparing-to-enter-the-holy-temple?lang=eng" target="_blank">provided additional aids</a>for use in preparing to enter the temple.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="contenedor">
+                <h2>Make Your Reservation</h2>
+                <hr >
+                <form  method="GET" action="thanks.html">
+                    <fieldset >
+                        <legend >Room Details</legend>
+                        <div >
+                            <label for="hotel-location">*Location:</label>
+                            <select id="hotel-location" name="hotel-location"  required>
+                                <option value="">Select a hotel location...</option>
+                                <option value="Gilbert">Gilbert</option>
+                                <option value="Ogden">Ogden</option>
+                                <option value="Manti">Manti</option>
+                                <option value="San Diego">San Diego</option>
+                            </select>
+                        </div>
+                        <div >
+                            <label for="visit-start-date">Start Date:</label>
+                            <input type="date" id="visit-start-date" name="visit-start-date">
+                        </div>
+        
+                        <div >
+                            <label for="visit-end-date">End Date:</label>
+                            <input type="date" id="visit-end-date" name="visit-end-date">
+                        </div>
+                        <div >
+                            <label for="number-of-rooms">*Number of Rooms:</label>
+                            <input type="number" min="1" max="5" id="number-of-rooms" name="number-of-rooms"  required>
+                        </div>
+                        <div >
+                            <label for="room-type">*Room Type:</label>
+                            <select id="room-type" name="room-type"  required>
+                                <option value="">Select a room type...</option>
+                                <option value="Single Bedroom - Single Bed">1 Bedroom-1 Bed</option>
+                                <option value="Single Bedroom - Two Beds">1 Bedroom-2 Beds</option>
+                                <option value="Two Bedrooms - Two Beds">2 Bedrooms-2 Beds</option>
+                                <option value="Two Bedrooms - Two Beds - Kitchenette">2 Bedrooms-2 Beds-Kitchenette</option>
+                            </select>
+                        </div>
+                    </fieldset>
+        
+                    <fieldset >
+                        <legend >Guest Information</legend>
+                        <div >
+                            <label for="guest-full-name">*Full Name:</label>
+                            <input pattern="[a-zA-Z ]{5,}" type="text" id="guest-full-name" name="guest-full-name"  required>
+                        </div>
+                        <div >
+                            <label for="guest-email">Email:</label>
+                            <input type="email" id="guest-email" name="guest-email">
+                        </div>
+                        <div >
+                            <label for="guest-phone">*Phone:</label>
+                            <input type="tel" id="guest-phone" name="guest-phone"  required>
+                        </div>
+                        <div >
+                            <label for="guest-state">Home State/Country:</label>
+                            <input type="text" id="guest-state" name="guest-state">
+                        </div>
+                    </fieldset>
+                    <fieldset >
+                        <legend >Other</legend>
+                        <div >
+                            <div>
+                                <label for="special-accommodations">Special Requests:</label>
+                            </div>      
+                            <br>
+                            <div>
+                                <textarea rows="4" cols="38" id="special-accommodations" name="special-accommodations"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Send" id="submit-button">
+                </form>
+                <div >
+                    <p>Organize yourselves; prepare every needful thing, and establish a house, even a house of prayer, a house of fasting, a house of faith, a house of learning, a house of glory, a house of order, a house of God;</p>
+                    <hr>
+                    <p>- Doctrine & Covenants 109:8</p>
                 </div>
-            </section>
-            <section>
-                <div class="contenedor">
-                    <h2>Make Your Reservation</h2>
-                    <hr >
-                    <form  method="GET" action="thanks.html">
-                        <fieldset >
-                            <legend >Room Details</legend>
-                            <div >
-                                <label for="hotel-location">*Location:</label>
-                                <select id="hotel-location" name="hotel-location"  required>
-                                    <option value="">Select a hotel location...</option>
-                                    <option value="Gilbert">Gilbert</option>
-                                    <option value="Ogden">Ogden</option>
-                                    <option value="Manti">Manti</option>
-                                    <option value="San Diego">San Diego</option>
-                                </select>
-                            </div>
-                            <div >
-                                <label for="visit-start-date">Start Date:</label>
-                                <input type="date" id="visit-start-date" name="visit-start-date">
-                            </div>
-            
-                            <div >
-                                <label for="visit-end-date">End Date:</label>
-                                <input type="date" id="visit-end-date" name="visit-end-date">
-                            </div>
-                            <div >
-                                <label for="number-of-rooms">*Number of Rooms:</label>
-                                <input type="number" min="1" max="5" id="number-of-rooms" name="number-of-rooms"  required>
-                            </div>
-                            <div >
-                                <label for="room-type">*Room Type:</label>
-                                <select id="room-type" name="room-type"  required>
-                                    <option value="">Select a room type...</option>
-                                    <option value="Single Bedroom - Single Bed">1 Bedroom-1 Bed</option>
-                                    <option value="Single Bedroom - Two Beds">1 Bedroom-2 Beds</option>
-                                    <option value="Two Bedrooms - Two Beds">2 Bedrooms-2 Beds</option>
-                                    <option value="Two Bedrooms - Two Beds - Kitchenette">2 Bedrooms-2 Beds-Kitchenette</option>
-                                </select>
-                            </div>
-                        </fieldset>
-            
-                        <fieldset >
-                            <legend >Guest Information</legend>
-                            <div >
-                                <label for="guest-full-name">*Full Name:</label>
-                                <input pattern="[a-zA-Z ]{5,}" type="text" id="guest-full-name" name="guest-full-name"  required>
-                            </div>
-                            <div >
-                                <label for="guest-email">Email:</label>
-                                <input type="email" id="guest-email" name="guest-email">
-                            </div>
-                            <div >
-                                <label for="guest-phone">*Phone:</label>
-                                <input type="tel" id="guest-phone" name="guest-phone"  required>
-                            </div>
-                            <div >
-                                <label for="guest-state">Home State/Country:</label>
-                                <input type="text" id="guest-state" name="guest-state">
-                            </div>
-                        </fieldset>
-                        <fieldset >
-                            <legend >Other</legend>
-                            <div >
-                                <div>
-                                    <label for="special-accommodations">Special Requests:</label>
-                                </div>      
-                                <br>
-                                <div>
-                                    <textarea rows="4" cols="38" id="special-accommodations" name="special-accommodations"></textarea>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <input type="submit" value="Send" id="submit-button">
-                    </form>
-                    <div >
-                        <p>Organize yourselves; prepare every needful thing, and establish a house, even a house of prayer, a house of fasting, a house of faith, a house of learning, a house of glory, a house of order, a house of God;</p>
-                        <hr>
-                        <p>- Doctrine & Covenants 109:8</p>
-                    </div>
-                </div>
-            </section>
-             
-      
+            </div>
+        </section>
     </main>
 
     <footer>
