@@ -20,6 +20,7 @@ p {
 * {
 	box-sizing: border-box;
 	font-family: 'Work Sans';
+	font-display: swap;
 }
 
 figure {
@@ -140,6 +141,11 @@ nav div ul {
 	transition: font-size 0.5s;
 }
 
+.accion a
+{
+	color: #011638;
+	text-decoration: none;
+}
 .mapa {
 	border: 0;
 	width: 100%;
