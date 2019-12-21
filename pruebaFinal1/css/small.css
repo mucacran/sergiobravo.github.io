@@ -297,4 +297,14 @@ footer hr {
 	box-sizing: border-box;
 }
 
-/*******************************************/
+/*******************FORM INPUTS************************/
+
+input
+{
+	padding: 5px;
+	margin: 5px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	
+
+}
