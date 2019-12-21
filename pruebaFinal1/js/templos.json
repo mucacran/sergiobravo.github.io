@@ -49,9 +49,9 @@
     },
     {
       "name": "Barranquilla Colombia Temple",
-      "address": "Calle 6ta y Avenida Rodrigo Chávez González Principado de las Lomas Urdesa Norte, Guayaquil",
-      "Telephone": "(+593) 43719200",
-      "CorreoElectrico": "templeguayaquil@lds.fin.ec",
+      "address": "Carrera 46 via Al Mar PR 107 Sentido Barranquilla, Cartagena Atlantico, Colombia",
+      "Telephone": "(57) 5-310-0200",
+      "CorreoElectrico": "colombiabarranquilla@lds.fin.ec",
       "LosServicios": [
         "Clothing rental available ",
         "Cafeteria available ",
@@ -95,9 +95,9 @@
     },
     {
       "name": "Lima Perú Temple",
-      "address": "Calle 6ta y Avenida Rodrigo Chávez González Principado de las Lomas Urdesa Norte, Guayaquil",
-      "Telephone": "(+593) 43719200",
-      "CorreoElectrico": "templeguayaquil@lds.fin.ec",
+      "address": "Av. Javier Prado Este 6420 Urb. Santa Patricia La Molina, Lima 12, Peru",
+      "Telephone": "(51) 1-612-7200",
+      "CorreoElectrico": "perulima@lds.fin.ec",
       "LosServicios": [
         "Clothing rental available ",
         "Cafeteria available ",
@@ -140,10 +140,10 @@
       "imageurl": "https://mucacran.github.io/sergiobravo.github.io/pruebaFinal1/img/peru.jpg"
     },
     {
-      "name": "cochabamba bolivia Temple",
-      "address": "Calle 6ta y Avenida Rodrigo Chávez González Principado de las Lomas Urdesa Norte, Guayaquil",
-      "Telephone": "(+593) 43719200",
-      "CorreoElectrico": "templeguayaquil@lds.fin.ec",
+      "name": "Cochabamba Bolivia Temple",
+      "address": "Av. Melchor Urquidi 1500 Casilla de Correo 1599 Alto Queru Queru, Cochabamba, Bolivia",
+      "Telephone": "(591) 4-429-3161",
+      "CorreoElectrico": "cochabambabolivia@lds.fin.ec",
       "LosServicios": [
         "Clothing rental available ",
         "Cafeteria available ",
