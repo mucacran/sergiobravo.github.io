@@ -41,19 +41,15 @@ WebFontConfig = {
 
 /*********************MENU Flotador********************************* */
 var prevScrollpos = window.pageYOffset;
-console.log('1: ' + prevScrollpos);
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  console.log('2: ' + currentScrollPos);
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
-    // document.getElementById("navbar").style.position= 'relative';
+
   } else {
     document.getElementById("navbar").style.top = "-174.95px";
-    // document.getElementById("navbar").style.position= 'relative';
   }
   prevScrollpos = currentScrollPos;
-  console.log('1igualado: ' + prevScrollpos);
 }
 /****************************************************** */
 
