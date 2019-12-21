@@ -27,7 +27,7 @@ fetch(apiURL)
         {
             if(i == numData)
             {
-                temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '">' + 
+                temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '" alt="'+ thetemplos[i].name +'" >' + 
                                         '<p> <b>Address</b>: ' + thetemplos[i].address + '</p>' +
                                         '<p> <b>Telephone</b>: ' + thetemplos[i].Telephone + '</p>' +
                                         '<p> <b>Mail</b>: ' + thetemplos[i].CorreoElectrico + '</p>' +
@@ -48,7 +48,7 @@ fetch(apiURL)
             }
             if(i == numData)
             {
-                temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '">' + 
+                temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '" alt="'+ thetemplos[i].name +'" >' + 
                                         '<p> <b>Address</b>: ' + thetemplos[i].address + '</p>' +
                                         '<p> <b>Telephone</b>: ' + thetemplos[i].Telephone + '</p>' +
                                         '<p> <b>Mail</b>: ' + thetemplos[i].CorreoElectrico + '</p>' +
@@ -70,7 +70,7 @@ fetch(apiURL)
             }
             if(i == numData)
             {
-                temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '">' + 
+                temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '" alt="'+ thetemplos[i].name +'" >' + 
                                         '<p> <b>Address</b>: ' + thetemplos[i].address + '</p>' +
                                         '<p> <b>Telephone</b>: ' + thetemplos[i].Telephone + '</p>' +
                                         '<p> <b>Mail</b>: ' + thetemplos[i].CorreoElectrico + '</p>' +
@@ -91,7 +91,7 @@ fetch(apiURL)
 
             }
             if(i == numData){
-                temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '">' + 
+                temploID.innerHTML =    '<img src="' + thetemplos[i].imageurl + '" alt="'+ thetemplos[i].name +'" >' + 
                                         '<p> <b>Address</b>: ' + thetemplos[i].address + '</p>' +
                                         '<p> <b>Telephone</b>: ' + thetemplos[i].Telephone + '</p>' +
                                         '<p> <b>Mail</b>: ' + thetemplos[i].CorreoElectrico + '</p>' +
