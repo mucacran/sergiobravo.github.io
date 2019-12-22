@@ -29,8 +29,8 @@ if('IntersectionObserver' in window) {
 WebFont.load({
   google: {
       families: [
-          'Work Sans',
-          'Ultra&display=swap'
+          'Ultra',
+          'Work Sans&display=swap'
       ]
   }
 });
