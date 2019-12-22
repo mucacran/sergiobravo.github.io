@@ -29,15 +29,12 @@ if('IntersectionObserver' in window) {
 WebFont.load({
   google: {
       families: [
-          'Ultra',
-          'Work Sans'
+          'Work Sans',
+          'Ultra&display=swap'
       ]
   }
 });
 
-WebFontConfig = {
-  events: false
-};
 
 /*********************MENU Flotador********************************* */
 var prevScrollpos = window.pageYOffset;

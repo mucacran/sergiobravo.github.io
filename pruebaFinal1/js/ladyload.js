@@ -29,15 +29,12 @@ if('IntersectionObserver' in window) {
 WebFont.load({
   google: {
       families: [
-          'Ultra',
-          'Work Sans'
+          'Work Sans',
+          'Ultra&display=swap',
       ]
   }
 });
 
-WebFontConfig = {
-  events: false
-};
 /******************SLIDER*************************** */
 var slides = document.querySelectorAll('#slides .slide');
 var currentSlide = 0;
